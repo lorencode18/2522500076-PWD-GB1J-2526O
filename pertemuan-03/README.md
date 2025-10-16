@@ -20,4 +20,5 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari :
     <li>membuat styling untuk selector ID #contact elemen textarea</li>
     <li>membuat styling untuk selector ID #contact elemen button</li>
     <li>membuat styling untuk selector ID #contact elemen button:hover</li>
+    membuat styling untuk selector ID #contact mode responsif (mobile)</li>
 </ol>
