@@ -12,4 +12,12 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari :
     <li>membuat styling untuk selector ID #about elemen p</li>
     <li>membuat styling untuk selector ID #about elemen strong</li>
     <li>membuat styling untuk selector ID #about mode responsif (mobile)</li>
+    <li>membuat styling untuk selector ID #contact</li>
+    <li>membuat styling untuk selector ID #contact elemen form</li>
+    <li>membuat styling untuk selector ID #contact elemen h2</li>
+    <li>membuat styling untuk selector ID #contact elemen label</li>
+    <li>membuat styling untuk selector ID #contact elemen input</li>
+    <li>membuat styling untuk selector ID #contact elemen textarea</li>
+    <li>membuat styling untuk selector ID #contact elemen button</li>
+    <li>membuat styling untuk selector ID #contact elemen button:hover</li>
 </ol>
