@@ -18,4 +18,5 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari :
      <li>membuat styling untuk selector ID #contact elemen label</li>
      <li>membuat styling untuk selector ID #contact elemen input dan textarea</li>
      <li>membuat styling untuk selector ID #contact elemen button</li>
+     <li>membuat styling untuk selector ID #contact elemen button:hover</li>
 </ol>
