@@ -17,7 +17,7 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari :
      <li>membuat styling untuk selector ID #contact elemen h2</li>
      <li>membuat styling untuk selector ID #contact elemen label</li>
      <li>membuat styling untuk selector ID #contact elemen input dan textarea</li>
-     <li>membuat styling untuk selector ID #contact elemen button</li>
+     <li>section#contact styling tombol</li>
      <li>membuat styling untuk selector ID #contact elemen button:hover</li>
      <li>membuat styling untuk selector ID #contact mode responsif (mobile)</li>
      <li>section#contact upgrade struktur form</li>
