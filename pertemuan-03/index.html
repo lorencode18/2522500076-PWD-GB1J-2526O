@@ -50,6 +50,21 @@
             flex-shrink: 0;
         }
 
+        #contact input,
+        #contact textarea {
+            flex: 1;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 8px;
+            color: #000;
+            font-weight: normal;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
         @media (max-width: 600px) {
             #about p {
                 flex-direction: column;
@@ -116,20 +131,7 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        #contact input,
-        #contact textarea {
-            display: inline-block;
-            width: calc(100% - 110px);
-            background: rgba(255, 255, 255, 0.3);
-            color: #000000;
-            border: none;
-            border-radius: 15px;
-            padding: 10px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            margin-left: -30px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-        }
+       
 
         #contact button {
             background: #ffffff;
