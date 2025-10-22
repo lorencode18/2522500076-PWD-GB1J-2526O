@@ -25,4 +25,5 @@ Hari ini, Kamis 09 Oktober 2025, saya mempelajari :
      <li>section#contact styling hover tombol</li>
      <li>section#contact styling label dan label>span</li>
      <li>section#contact styling input, textarea, button</li>
+     <li>section#contact upgrade styling label>span</li>
 </ol>
