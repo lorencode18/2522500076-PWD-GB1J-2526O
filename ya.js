@@ -93,3 +93,19 @@ window.addEventListener("resize", () => {
         if (target) alignErrorMessage(small, target);
     });
 });
+
+if (email.value.trim() === "") {
+  showError(email, "Email wajib diisi.");
+  isValid = false;
+} else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+  showError(email, "Format email tidak valid. Contoh: nama@mail.com");
+  isValid = false;
+}                     
+
+if (ismobile) {
+  label.style.display = 'flex';
+  label.style.flexDirection = 'column'
+  label.style.alignItems = 'flex-start';
+  label.style.width = '100%';   
+}
+
