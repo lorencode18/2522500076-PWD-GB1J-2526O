@@ -1,7 +1,6 @@
 document.getElementById("menuToggle").addEventListener("click", function () {
-    document.querySelector("nav").classList.toggle("active");
+   document.querySelector("nav").classList.toggle("active");
 });
-
 document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama");
     const email = document.getElementById("txtEmail");
@@ -93,3 +92,4 @@ window.addEventListener("resize", () => {
         if (target) alignErrorMessage(small, target);
     });
 });
+
