@@ -47,12 +47,7 @@
             ?>
     
             <h2>Tentang Saya</h2>
-            <p>
-                <strong>NIM :</strong> 
-                <?php
-                echo $nim;
-                ?>
-            </p>
+            <p><strong>NIM :</strong> <?php echo $nim; ?> </p>
             <P><strong>Nama Lengkap :</strong> <?php echo $nama; ?> &#128516;</P>
             <p><strong>Tempat Lahir :</strong> <?php echo $tempatlahir; ?> </p>
             <p><strong>Tanggal Lahir :</strong> <?php echo $tanggallahir; ?> </p>
