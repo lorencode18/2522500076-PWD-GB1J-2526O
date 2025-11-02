@@ -9,4 +9,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>copy index.html, style.css, script.js, c.gif (pertemuan-05)</li>
   <li>membuat skrip variabel php ke section#about</li>
   <li>latihan 1</li>
+  <li>latihan 2</li>
 </ol>
