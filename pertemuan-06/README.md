@@ -10,4 +10,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>membuat skrip variabel php ke section#about</li>
   <li>latihan 1</li>
   <li>latihan 2</li>
+  <li>latihan 3</li>
 </ol>
