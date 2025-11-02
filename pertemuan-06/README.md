@@ -14,4 +14,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>latihan 4&5</li>
   <li>latihan 6</li>
   <li>latihan 7</li>
+  <li>latihan 8</li>
 </ol>
