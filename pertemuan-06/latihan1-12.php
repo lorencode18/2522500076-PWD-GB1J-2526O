@@ -157,3 +157,10 @@ echo "<pre>";
 var_dump($hobi);
 echo "</pre>";
 ?>
+
+<h2>Latihan struktur kontrol perulangan dengan for</h2>
+<?php
+for ($i=1; $i<=5; $i++) {
+  echo "Perulangan ke-$i <br>";
+}
+?>
