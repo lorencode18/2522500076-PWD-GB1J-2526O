@@ -80,4 +80,7 @@ echo "Dosen_Pengampu: " . DOSEN_PENGAMPU . "<br>";
 
 // Menampilkan nama mata kuliah
 echo "Matakuliah: " . MATAKULIAH; 
-?> <br><br>
+?> 
+<br><br>
+
+
