@@ -137,3 +137,11 @@ foreach ($hobi as $item) {
 }
 ?>
 
+<h2>Latihan array dan penggunaan print_r() dan var_dump()</h2>
+<?php
+$hobi = ["Menonton film horor", "Baking", "Mendengarkan musik"];
+
+echo "<h3>Daftar Hobi Saya:</h3>";
+for ($i = 0; $i < count($hobi); $i++) {
+  echo ($i + 1) . ". " . $hobi[$i] . "<br>";
+}
