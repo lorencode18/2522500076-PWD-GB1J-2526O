@@ -105,3 +105,16 @@ echo "\$a === \$b : "; var_dump($a === $b);
 echo "\$c == \$d : "; var_dump($c == $d);
 echo "\$c === \$d : "; var_dump($c === $d);
 ?>
+
+<h2>Latihan struktur kontrol percabangan</h2>
+<?php
+$nilai = 90;
+
+if ($nilai >= 90) {
+  echo "A";
+} elseif ($nilai >= 80) {
+  echo "B";
+} else {
+  echo "C";
+}
+?>
