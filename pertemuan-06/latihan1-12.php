@@ -118,3 +118,13 @@ if ($nilai >= 90) {
   echo "C";
 }
 ?>
+<br>
+
+<?php
+$hari = "Jumat";
+switch ($hari) {
+  case "Senin": echo "Awal Minggu!"; break;
+  case "Jumat": echo "Hampir weekend!"; break;
+  default: echo "Hari biasa.";
+}
+?>
