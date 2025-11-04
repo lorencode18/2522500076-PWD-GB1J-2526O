@@ -128,3 +128,11 @@ switch ($hari) {
   default: echo "Hari biasa.";
 }
 ?>
+
+<h2>Latihan struktur kontrol perulangan dan array</h2>
+<?php
+$hobi = ["Menonton film horor", "Baking", "Mendengarkan musik"];
+foreach ($hobi as $item) {
+  echo "Hobi: $item <br>";
+}
+?>
