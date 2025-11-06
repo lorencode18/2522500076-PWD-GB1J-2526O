@@ -27,4 +27,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>membuat skrip php section#IPK matkul4</li>
   <li>membuat skrip php section#IPK matkul5</li>
   <li>membuat skrip php section#IPK total bobot, sks, ipk</li>
+  <li>style css section#IPK</li>
 </ol>

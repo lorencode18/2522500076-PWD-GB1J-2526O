@@ -266,7 +266,7 @@
 
             #IPK strong,
             #IPK b {
-          
+                flex: 1;
               display: inline;
             }
 

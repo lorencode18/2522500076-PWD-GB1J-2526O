@@ -209,7 +209,7 @@
                     $grade3 = "E";
                 } elseif ($nilaiAkhir3 >= 91) {
                     $grade3 = "A";
-                } elseif ($nilaiAkhir3>= 81) {
+                } elseif ($nilaiAkhir3 >= 81) {
                     $grade3 = "A-";
                 } elseif ($nilaiAkhir3 >= 76) {
                     $grade3 = "B+";
