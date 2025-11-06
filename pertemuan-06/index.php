@@ -70,7 +70,8 @@
             <p><strong>Nilai Akhir </strong><b>:</b></p>
             <p><strong>Grade </strong><b>:</b></p>
             <p><strong>Angka Mutu </strong><b>:</b></p>
-            <p><strong>Nama Matakuliah ke-1 </strong><b>:</b></p>
+            <p><strong>Bobot</strong><b>:</b></p>
+            <p><strong>Status</strong><b>:</b></p>  
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-2 </strong><b>:</b></p>
@@ -82,6 +83,8 @@
             <p><strong>Nilai Akhir </strong><b>:</b></p>
             <p><strong>Grade </strong><b>:</b></p>
             <p><strong>Angka Mutu </strong><b>:</b></p>
+            <p><strong>Bobot</strong><b>:</b></p>
+            <p><strong>Status</strong><b>:</b></p> 
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-3 </strong><b>:</b></p>
@@ -93,6 +96,8 @@
             <p><strong>Nilai Akhir </strong><b>:</b></p>
             <p><strong>Grade </strong><b>:</b></p>
             <p><strong>Angka Mutu </strong><b>:</b></p>
+            <p><strong>Bobot</strong><b>:</b></p>
+            <p><strong>Status</strong><b>:</b></p> 
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-4 </strong><b>:</b></p>
@@ -104,6 +109,8 @@
             <p><strong>Nilai Akhir </strong><b>:</b></p>
             <p><strong>Grade </strong><b>:</b></p>
             <p><strong>Angka Mutu </strong><b>:</b></p>
+            <p><strong>Bobot</strong><b>:</b></p>
+            <p><strong>Status</strong><b>:</b></p> 
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-5 </strong><b>:</b></p>
@@ -115,6 +122,8 @@
             <p><strong>Nilai Akhir </strong><b>:</b></p>
             <p><strong>Grade </strong><b>:</b></p>
             <p><strong>Angka Mutu </strong><b>:</b></p>
+            <p><strong>Bobot</strong><b>:</b></p>
+            <p><strong>Status</strong><b>:</b></p> 
 
         </section>
         
