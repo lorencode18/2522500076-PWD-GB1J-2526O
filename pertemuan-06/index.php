@@ -264,18 +264,73 @@
             <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot3, 2) ?> </span></p>
             <p><strong>Status</strong><b>:</b><span> <?php echo $status3 ?> </span></p> 
 
+            <?php
+                $namaMatkul4 = "Logika Informatika";
+                $sksMatkul4 = 3;
+                $nilaiHadir4 = 100;
+                $nilaiTugas4 = 90;
+                $nilaiUTS4 = 95;
+                $nilaiUAS4 = 90;
+                $nilaiAkhir4 = (0.1 * $nilaiHadir4) + (0.2 * $nilaiTugas4) + (0.3 * $nilaiUTS4) + (0.4 * $nilaiUAS4);
+                
+                if ($nilaiHadir4 < 70) {
+                    $grade4 = "E";
+                } elseif ($nilaiAkhir4 >= 91) {
+                    $grade4 = "A";
+                } elseif ($nilaiAkhir4 >= 81) {
+                    $grade4 = "A-";
+                } elseif ($nilaiAkhir4 >= 76) {
+                    $grade4 = "B+";
+                } elseif ($nilaiAkhir4 >= 71) {
+                    $grade4 = "B";
+                } elseif ($nilaiAkhir4 >= 66) {
+                    $grade4 = "B-";
+                } elseif ($nilaiAkhir4 >= 61) {
+                    $grade4 = "C+";
+                } elseif ($nilaiAkhir4 >= 56) {
+                    $grade4 = "C";
+                } elseif ($nilaiAkhir4 >= 51) {
+                    $grade4 = "C-";
+                } elseif ($nilaiAkhir4 >= 36) {
+                    $grade4 = "D";
+                } elseif ($nilaiAkhir4 >= 0) {
+                    $grade4 = "E";
+                }
+
+                switch ($grade4) {
+                    case "A":  $mutu4 = 4.00; break;
+                    case "A-": $mutu4 = 3.70; break;
+                    case "B+": $mutu4 = 3.30; break;
+                    case "B":  $mutu4 = 3.00; break;
+                    case "B-": $mutu4 = 2.70; break;
+                    case "C+": $mutu4 = 2.30; break;
+                    case "C":  $mutu4 = 2.00; break;
+                    case "C-": $mutu4 = 1.70; break;
+                    case "D":  $mutu4 = 1.00; break;
+                    default:   $mutu4 = 0.00; break;
+                }
+
+                $bobot4 = $mutu4 * $sksMatkul4;
+                
+                if ($grade4 == "D" || $grade4 == "E") {
+                    $status4 = "Tidak Lulus";
+                } else {
+                    $status4 = "Lulus";
+                }
+            ?>
+
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-4 </strong><b>:</b></p>
-            <p><strong>SKS </strong><b>:</b></p>
-            <p><strong>Kehadiran </strong><b>:</b></p>
-            <p><strong>Tugas </strong><b>:</b></p>
-            <p><strong>UTS </strong><b>:</b></p>
-            <p><strong>UAS </strong><b>:</b></p>
-            <p><strong>Nilai Akhir </strong><b>:</b></p>
-            <p><strong>Grade </strong><b>:</b></p>
-            <p><strong>Angka Mutu </strong><b>:</b></p>
-            <p><strong>Bobot</strong><b>:</b></p>
-            <p><strong>Status</strong><b>:</b></p> 
+            <p><strong>Nama Matakuliah ke-4 </strong><b>:</b><b>:</b><span> <?php echo $namaMatkul4 ?> </span></p>
+            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul4 ?> </span></p>
+            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir4 ?> </span></p>
+            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas4 ?> </span></p>
+            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS4 ?> </span></p>
+            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS4 ?> </span></p>
+            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir4 ?> </span></p>
+            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade4 ?> </span></p>
+            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu4, 2) ?> </span></p>
+            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot4, 2) ?> </span></p>
+            <p><strong>Status</strong><b>:</b><span><?php echo $status4 ?></span></p> 
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-5 </strong><b>:</b></p>
