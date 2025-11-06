@@ -320,7 +320,7 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-4 : </strong><?php echo $namaMatkul3 ?> </p>
+            <p><strong>Nama Matakuliah ke-4 : </strong><?php echo $namaMatkul4 ?> </p>
             <p><strong>SKS :</strong> <?php echo $sksMatkul4 ?> </p>
             <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir4 ?> </p>
             <p><strong>Tugas : </strong> <?php echo $nilaiTugas4 ?> </p>
