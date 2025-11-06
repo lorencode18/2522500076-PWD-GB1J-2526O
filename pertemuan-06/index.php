@@ -113,7 +113,6 @@
                 } else {
                     $status1 = "Lulus";
                 }
-       
             ?>
 
             <h2>Nilai Saya</h2>
@@ -129,18 +128,73 @@
             <p><strong>Bobot</strong><b>:</b><span> <?php echo $bobot1 ?> </span></p>
             <p><strong>Status</strong><b>:</b><span> <?php echo $status1 ?> </span></p>  
 
+            <?php
+                $namaMatkul2 = "Agama";
+                $sksMatkul2 = 2;
+                $nilaiHadir2 = 70;
+                $nilaiTugas2 = 50;
+                $nilaiUTS2 = 60;
+                $nilaiUAS2 = 80;
+                $nilaiAkhir2 = (0.1 * $nilaiHadir2) + (0.2 * $nilaiTugas2) + (0.3 * $nilaiUTS2) + (0.4 * $nilaiUAS2);
+               
+                if ($nilaiHadir2 < 70) {
+                    $grade2 = "E";
+                } elseif ($nilaiAkhir2 >= 91) {
+                    $grade2 = "A";
+                } elseif ($nilaiAkhir2 >= 81) {
+                    $grade2 = "A-";
+                } elseif ($nilaiAkhir2 >= 76) {
+                    $grade2 = "B+";
+                } elseif ($nilaiAkhir2 >= 71) {
+                    $grade2 = "B";
+                } elseif ($nilaiAkhir2 >= 66) {
+                    $grade2 = "B-";
+                } elseif ($nilaiAkhir2 >= 61) {
+                    $grade2 = "C+";
+                } elseif ($nilaiAkhir2 >= 56) {
+                    $grade2 = "C";
+                } elseif ($nilaiAkhir2 >= 51) {
+                    $grade2 = "C-";
+                } elseif ($nilaiAkhir2 >= 36) {
+                    $grade2 = "D";
+                } elseif ($nilaiAkhir2 >= 0) {
+                    $grade2 = "E";
+                }
+
+                switch ($grade2) {
+                    case "A":  $mutu2 = 4.00; break;
+                    case "A-": $mutu2 = 3.70; break;
+                    case "B+": $mutu2 = 3.30; break;
+                    case "B":  $mutu2 = 3.00; break;
+                    case "B-": $mutu2 = 2.70; break;
+                    case "C+": $mutu2 = 2.30; break;
+                    case "C":  $mutu2 = 2.00; break;
+                    case "C-": $mutu2 = 1.70; break;
+                    case "D":  $mutu2 = 1.00; break;
+                    default:   $mutu2 = 0.00; break;
+                }
+
+                $bobot2 = $mutu2 * $sksMatkul2;
+                
+                if ($grade2 == "D" || $grade2 == "E") {
+                    $status2 = "Tidak Lulus";
+                } else {
+                    $status2 = "Lulus";
+                }
+            ?>
+
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-2 </strong><b>:</b></p>
-            <p><strong>SKS </strong><b>:</b></p>
-            <p><strong>Kehadiran </strong><b>:</b></p>
-            <p><strong>Tugas </strong><b>:</b></p>
-            <p><strong>UTS </strong><b>:</b></p>
-            <p><strong>UAS </strong><b>:</b></p>
-            <p><strong>Nilai Akhir </strong><b>:</b></p>
-            <p><strong>Grade </strong><b>:</b></p>
-            <p><strong>Angka Mutu </strong><b>:</b></p>
-            <p><strong>Bobot</strong><b>:</b></p>
-            <p><strong>Status</strong><b>:</b></p> 
+            <p><strong>Nama Matakuliah ke-2 </strong><b>:</b><span> <?php echo $namaMatkul2 ?> </span></p>
+            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul2 ?> </span></p>
+            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir2 ?> </span></p>
+            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas2 ?> </span></p>
+            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS2 ?> </span></p>
+            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS2 ?> </span></p>
+            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir2 ?> </span></p>
+            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade2 ?> </span></p>
+            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu2, 2) ?> </span></p>
+            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot2, 2) ?></span></p>
+            <p><strong>Status</strong><b>:</b><span><?php echo $status2 ?></span></p> 
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-3 </strong><b>:</b></p>

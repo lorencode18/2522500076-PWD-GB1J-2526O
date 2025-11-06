@@ -22,4 +22,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>latihan 13</li>
   <li>membuat struktur section#IPK</li>
   <li>membuat skrip php section#IPK matkul1</li>
+  <li>membuat skrip php section#IPK matkul2</li>
 </ol>
