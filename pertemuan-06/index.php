@@ -332,18 +332,73 @@
             <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot4, 2) ?> </span></p>
             <p><strong>Status</strong><b>:</b><span><?php echo $status4 ?></span></p> 
 
+            <?php
+                $namaMatkul5 = "Pemrograman Web Dasar";
+                $sksMatkul5 = 3;
+                $nilaiHadir5 = 69;
+                $nilaiTugas5 = 80;
+                $nilaiUTS5 = 90;
+                $nilaiUAS5 = 100;
+                $nilaiAkhir5 = (0.1 * $nilaiHadir5) + (0.2 * $nilaiTugas5) + (0.3 * $nilaiUTS5) + (0.4 * $nilaiUAS5);
+                
+                if ($nilaiHadir5 < 70) {
+                    $grade5 = "E";
+                } elseif ($nilaiAkhir5 >= 91) {
+                    $grade5 = "A";
+                } elseif ($nilaiAkhir5 >= 81) {
+                    $grade5 = "A-";
+                } elseif ($nilaiAkhir5 >= 76) {
+                    $grade5 = "B+";
+                } elseif ($nilaiAkhir5 >= 71) {
+                    $grade5 = "B";
+                } elseif ($nilaiAkhir5 >= 66) {
+                    $grade5 = "B-";
+                } elseif ($nilaiAkhir5 >= 61) {
+                    $grade5 = "C+";
+                } elseif ($nilaiAkhir5 >= 56) {
+                    $grade5 = "C";
+                } elseif ($nilaiAkhir5 >= 51) {
+                    $grade5 = "C-";
+                } elseif ($nilaiAkhir5 >= 36) {
+                    $grade5 = "D";
+                } elseif ($nilaiAkhir5 >= 0 ) {
+                    $grade5 = "E";
+                }
+
+                switch ($grade5) {
+                    case "A":  $mutu5 = 4.00; break;
+                    case "A-": $mutu5 = 3.70; break;
+                    case "B+": $mutu5 = 3.30; break;
+                    case "B":  $mutu5 = 3.00; break;
+                    case "B-": $mutu5 = 2.70; break;
+                    case "C+": $mutu5 = 2.30; break;
+                    case "C":  $mutu5 = 2.00; break;
+                    case "C-": $mutu5 = 1.70; break;
+                    case "D":  $mutu5 = 1.00; break;
+                    default:   $mutu5 = 0.00; break;
+                }
+
+                $bobot5 = $mutu5 * $sksMatkul5;
+                
+                if ($grade5 == "D" || $grade5 == "E") {
+                    $status5 = "Tidak Lulus";
+                } else {
+                    $status5 = "Lulus";
+                }
+            ?>
+
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-5 </strong><b>:</b></p>
-            <p><strong>SKS </strong><b>:</b></p>
-            <p><strong>Kehadiran </strong><b>:</b></p>
-            <p><strong>Tugas </strong><b>:</b></p>
-            <p><strong>UTS </strong><b>:</b></p>
-            <p><strong>UAS </strong><b>:</b></p>
-            <p><strong>Nilai Akhir </strong><b>:</b></p>
-            <p><strong>Grade </strong><b>:</b></p>
-            <p><strong>Angka Mutu </strong><b>:</b></p>
-            <p><strong>Bobot</strong><b>:</b></p>
-            <p><strong>Status</strong><b>:</b></p> 
+            <p><strong>Nama Matakuliah ke-5 </strong><b>:</b><span> <?php echo $namaMatkul5 ?> </span></p>
+            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul5 ?> </span></p>
+            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir5 ?> </span></p>
+            <p><strong>Tugas </strong><b>:</b><span><?php echo $nilaiTugas5 ?></span></p>
+            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS5 ?> </span></p>
+            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS5 ?> </span></p>
+            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir5 ?> </span></p>
+            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade5 ?> </span></p>
+            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu5, 2) ?> </span></p>
+            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot5, 2) ?></span></p>
+            <p><strong>Status</strong><b>:</b><span> <?php echo $status5 ?> </span></p> 
 
         </section>
         
