@@ -321,16 +321,16 @@
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-4 : </strong><?php echo $namaMatkul3 ?> </p>
-            <p><strong>SKS :</strong> <?php echo $sksMatkul3 ?> </p>
-            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir3 ?> </p>
-            <p><strong>Tugas : </strong> <?php echo $nilaiTugas3 ?> </p>
-            <p><strong>UTS : </strong> <?php echo $nilaiUTS3 ?> </p>
-            <p><strong>UAS : </strong><?php echo $nilaiUAS3 ?> </p>
-            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir ?> </p>
-            <p><strong>Grade : </strong> <?php echo $grade3 ?> </p>
-            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu3, 2) ?> </p>
-            <p><strong>Bobot : </strong> <?php echo $bobot3 ?> </p>
-            <p><strong>Status : </strong> <?php echo $status3 ?> </p>  
+            <p><strong>SKS :</strong> <?php echo $sksMatkul4 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir4 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas4 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS4 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS4 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir4 ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade4 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu4, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot4 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status4 ?> </p>  
 
             <?php
                 $namaMatkul5 = "Pemrograman Web Dasar";
