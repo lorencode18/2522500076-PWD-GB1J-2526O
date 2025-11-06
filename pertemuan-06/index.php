@@ -116,17 +116,17 @@
             ?>
 
             <h2>Nilai Saya</h2>
-            <p><strong>Nama Matakuliah ke-1 </strong><b>:</b><span> <?php echo $namaMatkul1 ?> </span></p>
-            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul1 ?> </span></p>
-            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir1 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas1 ?> </span></p>
-            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS1 ?> </span></p>
-            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS1 ?> </span></p>
-            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir1 ?> </span></p>
-            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade1 ?> </span></p>
-            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu1, 2) ?> </span></p>
-            <p><strong>Bobot</strong><b>:</b><span> <?php echo $bobot1 ?> </span></p>
-            <p><strong>Status</strong><b>:</b><span> <?php echo $status1 ?> </span></p>  
+            <p><strong>Nama Matakuliah ke-1 : </strong><?php echo $namaMatkul1 ?> </p>
+            <p><strong>SKS :</strong> <?php echo $sksMatkul1 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir1 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas1 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS1 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS1 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir1 ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade1 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu1, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot1 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status1 ?> </p>  
 
             <?php
                 $namaMatkul2 = "Agama";
@@ -184,17 +184,17 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-2 </strong><b>:</b><span> <?php echo $namaMatkul2 ?> </span></p>
-            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul2 ?> </span></p>
-            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir2 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas2 ?> </span></p>
-            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS2 ?> </span></p>
-            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS2 ?> </span></p>
-            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir2 ?> </span></p>
-            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade2 ?> </span></p>
-            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu2, 2) ?> </span></p>
-            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot2, 2) ?></span></p>
-            <p><strong>Status</strong><b>:</b><span><?php echo $status2 ?></span></p> 
+            <p><strong>Nama Matakuliah ke-2 : </strong><?php echo $namaMatkul2 ?> </p>
+            <p><strong>SKS :</strong> <?php echo $sksMatkul2 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir2 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas2 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS2 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS2 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir2 ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade2 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu2, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot2 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status2 ?> </p>  
 
             <?php
                 $namaMatkul3 = "Aplikasi Perkantoran";
@@ -252,17 +252,17 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-3 </strong><b>:</b><span> <?php echo $namaMatkul3 ?> </span></p>
-            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul3 ?> </span></p>
-            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir3 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas3 ?> </span></p>
-            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS3 ?> </span></p>
-            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS3 ?> </span></p>
-            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir3 ?> </span></p>
-            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade3 ?> </span></p>
-            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu3, 2) ?> </span></p>
-            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot3, 2) ?> </span></p>
-            <p><strong>Status</strong><b>:</b><span> <?php echo $status3 ?> </span></p> 
+            <p><strong>Nama Matakuliah ke-3 : </strong><?php echo $namaMatkul3 ?> </p>
+            <p><strong>SKS :</strong> <?php echo $sksMatkul3 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir3 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas3 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS3 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS3 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir3 ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade3 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu3, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot3 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status3 ?> </p>  
 
             <?php
                 $namaMatkul4 = "Logika Informatika";
@@ -320,17 +320,17 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-4 </strong><b>:</b><span> <?php echo $namaMatkul4 ?> </span></p>
-            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul4 ?> </span></p>
-            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir4 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas4 ?> </span></p>
-            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS4 ?> </span></p>
-            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS4 ?> </span></p>
-            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir4 ?> </span></p>
-            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade4 ?> </span></p>
-            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu4, 2) ?> </span></p>
-            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot4, 2) ?> </span></p>
-            <p><strong>Status</strong><b>:</b><span><?php echo $status4 ?></span></p> 
+            <p><strong>Nama Matakuliah ke-4 : </strong><?php echo $namaMatkul3 ?> </p>
+            <p><strong>SKS :</strong> <?php echo $sksMatkul3 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir3 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas3 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS3 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS3 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade3 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu3, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot3 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status3 ?> </p>  
 
             <?php
                 $namaMatkul5 = "Pemrograman Web Dasar";
@@ -388,17 +388,17 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-5 </strong><b>:</b><span> <?php echo $namaMatkul5 ?> </span></p>
-            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul5 ?> </span></p>
-            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir5 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span><?php echo $nilaiTugas5 ?></span></p>
-            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS5 ?> </span></p>
-            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS5 ?> </span></p>
-            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir5 ?> </span></p>
-            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade5 ?> </span></p>
-            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu5, 2) ?> </span></p>
-            <p><strong>Bobot</strong><b>:</b><span> <?php echo number_format ($bobot5, 2) ?></span></p>
-            <p><strong>Status</strong><b>:</b><span> <?php echo $status5 ?> </span></p> 
+            <p><strong>Nama Matakuliah ke-5 : </strong><?php echo $namaMatkul5 ?> </p>
+            <p><strong>SKS :</strong> <?php echo $sksMatkul5 ?> </p>
+            <p><strong>Kehadiran : </strong> <?php echo $nilaiHadir5 ?> </p>
+            <p><strong>Tugas : </strong> <?php echo $nilaiTugas5 ?> </p>
+            <p><strong>UTS : </strong> <?php echo $nilaiUTS5 ?> </p>
+            <p><strong>UAS : </strong><?php echo $nilaiUAS5 ?> </p>
+            <p><strong>Nilai Akhir : </strong> <?php echo $nilaiAkhir5 ?> </p>
+            <p><strong>Grade : </strong> <?php echo $grade5 ?> </p>
+            <p><strong>Angka Mutu : </strong> <?php echo number_format($mutu5, 2) ?> </p>
+            <p><strong>Bobot : </strong> <?php echo $bobot5 ?> </p>
+            <p><strong>Status : </strong> <?php echo $status5 ?> </p>  
 
             <?php
                 $totalBobot = ($bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5);
@@ -407,9 +407,9 @@
             ?>
 
             <h2></h2>
-            <p><strong>Total Bobot </strong><b>:</b><span><?php echo $totalBobot ?></span></p>
-            <p><strong>Total SKS </strong><b>:</b><span><?php echo $totalSKS ?></span></p>
-            <p><strong>IPK </strong><b>:</b><span><?php echo number_format ($IPK,2) ?></span></p>
+            <p><strong>Total Bobot : </strong><?php echo $totalBobot ?></p>
+            <p><strong>Total SKS : </strong><?php echo $totalSKS ?></p>
+            <p><strong>IPK : </strong><?php echo number_format ($IPK,2) ?></p>
 
         </section>
         
