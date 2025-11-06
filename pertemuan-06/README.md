@@ -20,4 +20,5 @@ Hari ini, Sabtu 1 November 2025, saya mempelajari:
   <li>latihan 11</li>
   <li>latihan 12</li>
   <li>latihan 13</li>
+  <li>membuat struktur section#IPK</li>
 </ol>
