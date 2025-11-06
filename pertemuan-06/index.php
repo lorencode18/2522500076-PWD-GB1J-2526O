@@ -60,18 +60,74 @@
         </section>
 
         <section id="IPK">
+            <?php
+                $namaMatkul1 = "Algoritma dan Struktur Data";
+                $sksMatkul1 = 4;
+                $nilaiHadir1 = 90;
+                $nilaiTugas1 = 60;
+                $nilaiUTS1 = 80;
+                $nilaiUAS1 = 70;
+                $nilaiAkhir1 = (0.1 * $nilaiHadir1) + (0.2 * $nilaiTugas1) + (0.3 * $nilaiUTS1) + (0.4 * $nilaiUAS1);
+                
+                if ($nilaiHadir1 < 70) {
+                    $grade1 = "E";
+                } elseif ($nilaiAkhir1 >= 91) {
+                    $grade1 = "A";
+                } elseif ($nilaiAkhir1 >= 81) {
+                    $grade1 = "A-";
+                } elseif ($nilaiAkhir1 >= 76) {
+                    $grade1 = "B+";
+                } elseif ($nilaiAkhir1 >= 71) {
+                    $grade1 = "B";
+                } elseif ($nilaiAkhir1 >= 66) {
+                    $grade1 = "B-";
+                } elseif ($nilaiAkhir1 >= 61) {
+                    $grade1 = "C+";
+                } elseif ($nilaiAkhir1 >= 56) {
+                    $grade1 = "C";
+                } elseif ($nilaiAkhir1 >= 51) {
+                    $grade1 = "C-";
+                } elseif ($nilaiAkhir1 >= 36) {
+                    $grade1 = "D";
+                } elseif ($nilaiAkhir1 >= 0) {
+                    $grade1 = "E";
+                }
+
+                switch ($grade1) {
+                    case "A":  $mutu1 = 4.00; break;
+                    case "A-": $mutu1 = 3.70; break;
+                    case "B+": $mutu1 = 3.30; break;
+                    case "B":  $mutu1 = 3.00; break;
+                    case "B-": $mutu1 = 2.70; break;
+                    case "C+": $mutu1 = 2.30; break;
+                    case "C":  $mutu1 = 2.00; break;
+                    case "C-": $mutu1 = 1.70; break;
+                    case "D":  $mutu1 = 1.00; break;
+                    default:   $mutu1 = 0.00; break;
+                }
+
+                $bobot1 = $mutu1 * $sksMatkul1;
+                
+                if ($grade1 == "D" || $grade1 == "E") {
+                    $status1 = "Tidak Lulus";
+                } else {
+                    $status1 = "Lulus";
+                }
+       
+            ?>
+
             <h2>Nilai Saya</h2>
-            <p><strong>Nama Matakuliah ke-1 </strong><b>:</b></p>
-            <p><strong>SKS </strong><b>:</b></p>
-            <p><strong>Kehadiran </strong><b>:</b></p>
-            <p><strong>Tugas </strong><b>:</b></p>
-            <p><strong>UTS </strong><b>:</b></p>
-            <p><strong>UAS </strong><b>:</b></p>
-            <p><strong>Nilai Akhir </strong><b>:</b></p>
-            <p><strong>Grade </strong><b>:</b></p>
-            <p><strong>Angka Mutu </strong><b>:</b></p>
-            <p><strong>Bobot</strong><b>:</b></p>
-            <p><strong>Status</strong><b>:</b></p>  
+            <p><strong>Nama Matakuliah ke-1 </strong><b>:</b><span> <?php echo $namaMatkul1 ?> </span></p>
+            <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul1 ?> </span></p>
+            <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir1 ?> </span></p>
+            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas1 ?> </span></p>
+            <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS1 ?> </span></p>
+            <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS1 ?> </span></p>
+            <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir1 ?> </span></p>
+            <p><strong>Grade </strong><b>:</b><span> <?php echo $grade1 ?> </span></p>
+            <p><strong>Angka Mutu </strong><b>:</b><span> <?php echo number_format($mutu1, 2) ?> </span></p>
+            <p><strong>Bobot</strong><b>:</b><span> <?php echo $bobot1 ?> </span></p>
+            <p><strong>Status</strong><b>:</b><span> <?php echo $status1 ?> </span></p>  
 
             <h2></h2>
             <p><strong>Nama Matakuliah ke-2 </strong><b>:</b></p>
