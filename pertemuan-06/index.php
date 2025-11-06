@@ -320,7 +320,7 @@
             ?>
 
             <h2></h2>
-            <p><strong>Nama Matakuliah ke-4 </strong><b>:</b><b>:</b><span> <?php echo $namaMatkul4 ?> </span></p>
+            <p><strong>Nama Matakuliah ke-4 </strong><b>:</b><span> <?php echo $namaMatkul4 ?> </span></p>
             <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul4 ?> </span></p>
             <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir4 ?> </span></p>
             <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas4 ?> </span></p>
@@ -405,7 +405,7 @@
                 $totalSKS = ($sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5);
                 $IPK = ($totalBobot / $totalSKS);
             ?>
-            
+
             <h2></h2>
             <p><strong>Total Bobot </strong><b>:</b><span><?php echo $totalBobot ?></span></p>
             <p><strong>Total SKS </strong><b>:</b><span><?php echo $totalSKS ?></span></p>
