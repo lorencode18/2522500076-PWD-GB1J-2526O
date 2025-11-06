@@ -255,7 +255,7 @@
             <p><strong>Nama Matakuliah ke-3 </strong><b>:</b><span> <?php echo $namaMatkul3 ?> </span></p>
             <p><strong>SKS </strong><b>:</b><span> <?php echo $sksMatkul3 ?> </span></p>
             <p><strong>Kehadiran </strong><b>:</b><span> <?php echo $nilaiHadir3 ?> </span></p>
-            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas3 ?> </span><</p>
+            <p><strong>Tugas </strong><b>:</b><span> <?php echo $nilaiTugas3 ?> </span></p>
             <p><strong>UTS </strong><b>:</b><span> <?php echo $nilaiUTS3 ?> </span></p>
             <p><strong>UAS </strong><b>:</b><span> <?php echo $nilaiUAS3 ?> </span></p>
             <p><strong>Nilai Akhir </strong><b>:</b><span> <?php echo $nilaiAkhir3 ?> </span></p>
