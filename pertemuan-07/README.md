@@ -15,4 +15,5 @@ Hari ini, Sabtu 8 November 2025, saya belajar:<br>
   <li>sesuaikan get ke post</li>
   <li>session_destroy</li>
   <li>isset</li>
+  <li>membuat skrip variabel php section#about</li>
 </ol>
