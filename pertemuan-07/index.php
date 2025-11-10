@@ -69,6 +69,82 @@
       <p><strong>Nama Adik:</strong> <?php echo $namaadik ?></p>
     </section>
 
+    <section id="ipk">
+      <?php
+      $namaMatkul1 = ""; 
+      $namaMatkul2 = ""; 
+      $namaMatkul3 = ""; 
+      $namaMatkul4 = ""; 
+      $namaMatkul5 = "";
+      $sksMatkul1 = ""; 
+      $sksMatkul2 = ""; 
+      $sksMatkul3 = ""; 
+      $sksMatkul4 = ""; 
+      $sksMatkul5 = "";
+      $nilaiHadir1 = ""; 
+      $nilaiHadir2 = ""; 
+      $nilaiHadir3 = ""; 
+      $nilaiHadir4 = ""; 
+      $nilaiHadir5 = "";
+      $nilaiTugas1 = ""; 
+      $nilaiTugas2 = ""; 
+      $nilaiTugas3 = ""; 
+      $nilaiTugas4 = ""; 
+      $nilaiTugas5 = "";
+      $nilaiUTS1 = ""; 
+      $nilaiUTS2 = ""; 
+      $nilaiUTS3 = ""; 
+      $nilaiUTS4 = ""; 
+      $nilaiUTS5 = "";
+      $nilaiUAS1 = ""; 
+      $nilaiUAS2 = ""; 
+      $nilaiUAS3 = ""; 
+      $nilaiUAS4 = ""; 
+      $nilaiUAS5 = "";
+      $nilaiAkhir1 = ""; 
+      $nilaiAkhir2 = ""; 
+      $nilaiAkhir3 = ""; 
+      $nilaiAkhir4 = ""; 
+      $nilaiAkhir5 = "";
+      $grade1 = ""; 
+      $grade2 = ""; 
+      $grade3 = ""; 
+      $grade4 = ""; 
+      $grade5 = "";
+      $mutu1 = ""; 
+      $mutu2 = ""; 
+      $mutu3 = ""; 
+      $mutu4 = ""; 
+      $mutu5 = "";
+      $bobot1 = ""; 
+      $bobot2 = ""; 
+      $bobot3 = ""; 
+      $bobot4 = ""; 
+      $bobot5 = "";
+      $status1 = ""; 
+      $status2 = ""; 
+      $status3 = ""; 
+      $status4 = ""; 
+      $status5 = "";
+      $totalBobot = "";
+      $totalSKS = "";
+      $IPK = "";  
+      ?>
+      <h2>Tentang Saya</h2>
+      <p><strong>NIM:</strong>
+        <?php
+        echo $NIM;
+        ?>
+      </p>
+      <p><strong>Nama Lengkap:</strong>
+        <?php
+        echo $Nama;
+        ?> &#128526;
+      </p>
+      <p><strong>Tempat Lahir:</strong> <?php echo $tempatlahir ?></p>
+      
+    </section>
+
     <section id="contact">
       <h2>Kontak Kami</h2>
       <form action="" method="GET">
