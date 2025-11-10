@@ -4,5 +4,5 @@
   $_SESSION["email"] = $_POST["txtEmail"];
   $_SESSION["pesan"] = $_POST["txtPesan"];
   echo $_SESSION["nama"] . $_SESSION["email"] . $_SESSION["pesan"];
-  #header(header: "Location: post.php");
+  header(header: "Location: post.php");
 ?>
