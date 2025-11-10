@@ -132,11 +132,15 @@
       $mutu3 = ""; 
       $mutu4 = ""; 
       $mutu5 = "";
-      $bobot1 = ""; 
-      $bobot2 = ""; 
-      $bobot3 = ""; 
-      $bobot4 = ""; 
-      $bobot5 = "";
+
+      # Bobot = angkaMutu * sksMatkul
+
+      $bobot1 = $mutu1 * $sksMatkul1; 
+      $bobot2 = $mutu2 * $sksMatkul2; 
+      $bobot3 = $mutu3 * $sksMatkul3; 
+      $bobot4 = $mutu4 * $sksMatkul4; 
+      $bobot5 = $mutu5 * $sksMatkul5; 
+
       /*
       Grade A, A-, B+, B, B-, C+, C, C- maka Status: LULUS
       Grade D, E maka Status: GAGAL
@@ -215,7 +219,7 @@
           $status5 = GAGAL; 
           break;
       endswitch;
-      
+
       # Bobot = angkaMutu * sksMatkul
       $totalBobot = "";
       $totalSKS = "";
