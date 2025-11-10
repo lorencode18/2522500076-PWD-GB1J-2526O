@@ -17,4 +17,6 @@ Hari ini, Sabtu 8 November 2025, saya belajar:<br>
   <li>isset</li>
   <li>membuat skrip variabel php section#about</li>
   <li>copy section#about, rename jadi section#ipk</li>
+  <li>5x5 variabel matakuliah</li>
+  <li>5x5 variabel proses dan hasil</li>
 </ol>
