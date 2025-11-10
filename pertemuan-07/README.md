@@ -24,4 +24,5 @@ Hari ini, Sabtu 8 November 2025, saya belajar:<br>
   <li>buat kondisi kehadiran di bawah 70, grade = E</li>
   <li>buat kondisi status berdasarkan grade</li>
   <li>hitung bobot 1 sampai 5</li>
+  <li>hitung total bobot dan hitung sks</li>
 </ol>
