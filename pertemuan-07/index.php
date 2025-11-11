@@ -476,7 +476,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Yohanes Setiawan Japriadi [0344300002]</p>
+    <p>&copy; 2025 Prita Lauren [2522500076]</p>
   </footer>
 
   <script src="script.js"></script>
