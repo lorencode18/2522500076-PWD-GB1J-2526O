@@ -26,4 +26,6 @@ Hari ini, Sabtu 8 November 2025, saya belajar:<br>
   <li>hitung bobot 1 sampai 5</li>
   <li>hitung total bobot dan hitung sks</li>
   <li>hitung IPK</li>
+  <li>membuat struktur section#ipk dan menambahkan variabel</li>
+  <li>menambahkan style css section#ipk</li>
 </ol>
