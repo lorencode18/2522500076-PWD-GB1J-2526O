@@ -15,4 +15,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat file ini.php</li>
   <li>ambil nilai input dari form biodata ke ini.php</li>
   <li>session ini.php</li>
+  <li>isset index.php</li>
 </ol>
