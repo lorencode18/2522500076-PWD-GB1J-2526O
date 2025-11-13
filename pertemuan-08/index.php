@@ -54,7 +54,7 @@ endif;
 
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
-      <form action="proses.php" method="POST">
+      <form action="ini.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
           <input type="nim" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required autocomplete="name">

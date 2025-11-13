@@ -11,4 +11,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>menambahkan section baru (biodata)</li>
   <li>membuat input biodata </li>
   <li>styling section#biodata</li>
+  <li>action untuk biodata</li>
 </ol>
