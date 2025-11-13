@@ -135,28 +135,28 @@ header li a:active {
   margin-right: 8px;
 }
 
-#contact button[type="submit"] 
+#contact button[type="submit"], 
 #biodata button[type="submit"] {
   background-color: #003366;
   color: #fff;
   font-weight: 600;
 }
 
-#contact button[type="reset"]
+#contact button[type="reset"],
 #biodata button[type="reset"] {
   background-color: #b4b4b4;
   color: #272727;
   font-weight: 500;
 }
 
-#contact button[type="submit"]:hover
+#contact button[type="submit"]:hover,
 #biodata button[type="submit"]:hover {
   background-color: #0379ee;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-#contact button[type="reset"]:hover
+#contact button[type="reset"]:hover,
 #biodata button[type="reset"]:hover {
   background-color: #cccccc;
   transform: translateY(-1px);
