@@ -11,4 +11,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>download dan ekstrak bahan uts dari e learning ke pertemuan-08</li>
   <li>menambahkan section baru (biodata)</li>
   <li>membuat input biodata </li>
+  <li>styling section#biodata</li>
 </ol>
