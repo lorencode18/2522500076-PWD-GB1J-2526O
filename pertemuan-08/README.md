@@ -12,4 +12,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>membuat input biodata </li>
   <li>styling section#biodata</li>
   <li>action untuk biodata</li>
+  <li>membuat file ini.php</li>
 </ol>
