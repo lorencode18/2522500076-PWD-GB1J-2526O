@@ -9,4 +9,5 @@ Kelompok: TI1A<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>download dan ekstrak bahan uts dari e learning ke pertemuan-08</li>
+  <li>menambahkan section baru (biodata)</li>
 </ol>
