@@ -1,5 +1,19 @@
 <?php
 session_start();
+$sesnim = $_SESSION["sesnim"];
+$sesnama = $_SESSION["sesnama"];
+$sestmptlhr = $_SESSION["sestmptlhr"];
+$sestgllhr = $_SESSION["sestgllhr"];
+$seshobi = $_SESSION["seshobi"];
+$sespasangan = $_SESSION["sespasangan"];
+$sespekerjaan =$_SESSION["sespekerjaan"];
+$sesortu = $_SESSION["sesortu"];
+$seskakak = $_SESSION["seskakak"];
+$sesadik = $_SESSION["sesadik"];
+?>
+
+<?php
+session_start();
 
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
