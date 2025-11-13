@@ -56,44 +56,44 @@ endif;
       <h2>Biodata Sederhana Mahasiswa</h2>
       <form action="proses.php" method="POST">
 
-        <label for="txtNama"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required autocomplete="name">
+        <label for="txtNim"><span>NIM:</span>
+          <input type="nim" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required autocomplete="name">
         </label>
 
-        <label for="txtEmail"><span>Nama Lengkap:</span>
-          <input type="email" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="email">
+        <label for="txtNama"><span>Nama Lengkap:</span>
+          <input type="nama" id="txtNama" name="txtNama" placeholder="Masukkan nama lengkap" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Tempat Lahir:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtTmptlhr"><span>Tempat Lahir:</span>
+          <input type="tmptlhr" id="txtTmptlhr" name="txtTmptlhr" placeholder="Masukkan tempat lahir" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Tanggal lahir:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtTgllahir"><span>Tanggal lahir:</span>
+          <input type="tgllahir" id="txtTgllahir" name="txtTgllahir" placeholder="Masukkan tanggal lahir" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Hobi:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtHobi"><span>Hobi:</span>
+          <input type="hobi" id="txtHobi" name="txtHobi" placeholder="Masukkan hobi" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Pasangan:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtPasangan"><span>Pasangan:</span>
+          <input type="pasangan" id="txtPasangan" name="txtPasangan" placeholder="Masukkan nama pasangan" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Pekerjaan:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input type="pekerjaan" id="txtPekerjaan" name="txtPekerjaan" placeholder="Masukkan pekerjaan" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Nama Orang Tua:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtOrtu"><span>Nama Orang Tua:</span>
+          <input type="ortu" id="txtOrtu" name="txtOrtu" placeholder="Masukkan nama orang tua" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Nama Kakak:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtKakak"><span>Nama Kakak:</span>
+          <input type="kakak" id="txtKakak" name="txtKakak" placeholder="Masukkan nama kakak" required autocomplete="email">
         </label>
 
-        <label for="txtEmail"><span>Nama Adik:</span>
-          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        <label for="txtAdik"><span>Nama Adik:</span>
+          <input type="adik" id="txtAdik" name="txtAdik" placeholder="Masukkan nama adik" required autocomplete="email">
         </label>
 
 
