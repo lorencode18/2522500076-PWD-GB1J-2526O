@@ -8,5 +8,5 @@ Kelompok: TI1A<br>
 <br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
-  <li>download dan extract bahan uts dari e learning ke pertemuan-08</li>
+  <li>download dan ekstrak bahan uts dari e learning ke pertemuan-08</li>
 </ol>
