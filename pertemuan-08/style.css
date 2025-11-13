@@ -246,7 +246,7 @@ footer {
   #contact button,
   #biodata input,
   #biodata textarea,
-  #biodata button, {
+  #biodata button {
     width: 100%;
   }
 }
