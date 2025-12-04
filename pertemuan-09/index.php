@@ -16,7 +16,6 @@ if (isset($_SESSION["sespesan"])):
   $sespesan = $_SESSION["sespesan"];
 endif;
 
-<<<<<<< HEAD
 $txtNim = "";
 if (isset($_SESSION["txtNim"])):
   $txtNim = $_SESSION["txtNim"];
@@ -66,22 +65,6 @@ $txtNmAdik = "";
 if (isset($_SESSION["txtNmAdik"])):
   $txtNmAdik = $_SESSION["txtNmAdik"];
 endif;
-=======
-$biodata = $_SESSION["biodata"] ?? [];
-
-$fieldConfig = [
-  "nim" => ["label" => "NIM:", "suffix" => ""],
-  "nama" => ["label" => "Nama Lengkap:", "suffix" => "&#128526;"],
-  "tempat" => ["label" => "Tempat Lahir:", "suffix" => ""],
-  "tanggal" => ["label" => "Tanggal Lahir:", "suffix" => ""],
-  "hobi" => ["label" => "Hobi:", "suffix" => "&#127926;"],
-  "pasangan" => ["label" => "Pasangan:", "suffix" => "&hearts;"],
-  "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => "&copy; 2025"],
-  "ortu" => ["label" => "Nama Orang Tua:", "suffix" => ""],
-  "kakak" => ["label" => "Nama Kakak:", "suffix" => ""],
-  "adik" => ["label" => "Nama Adik:", "suffix" => ""],
-];
->>>>>>> 9762fbe784d3e422d8768aeb7af1d2b526acb0da
 ?>
 
 <!DOCTYPE html>
