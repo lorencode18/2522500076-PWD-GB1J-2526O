@@ -1,55 +1,16 @@
 <?php
 session_start();
 
-$sesnim = "";
-if (isset($_SESSION["sesnim"])):
-  $sesnim = $_SESSION["sesnim"];
-endif;
-
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
-
-$sestmptlhr = "";
-if (isset($_SESSION["sestmptlhr"])):
-  $sestmptlhr = $_SESSION["sestmptlhr"];
-endif;
-
-$sestgllhr = "";
-if (isset($_SESSION["sestgllhr"])):
-  $sestgllhr = $_SESSION["sestgllhr"];
-endif;
-
-$seshobi = "";
-if (isset($_SESSION["seshobi"])):
-  $seshobi = $_SESSION["seshobi"];
-endif;
-
-$sespasangan = "";
-if (isset($_SESSION["sespasangan"])):
-  $sespasangan = $_SESSION["sespasangan"];
-endif;
-
-$sespekerjaan = "";
-if (isset($_SESSION["sespekerjaan"])):
-  $sespekerjaan = $_SESSION["sespekerjaan"];
-endif;
-
-$sesortu = "";
-if (isset($_SESSION["sesortu"])):
-  $sesortu = $_SESSION["sesortu"];
-endif;
-
-$seskakak = "";
-if (isset($_SESSION["seskakak"])):
-  $seskakak = $_SESSION["seskakak"];
-endif;
-
-$sesadik = "";
-if (isset($_SESSION["sesadik"])):
-  $sesadik = $_SESSION["sesadik"];
-endif;
+$sesnim = $_SESSION["sesNim"] ?? "";
+$sesnamalngkp = $_SESSION["txtNamalngkp"] ?? "";  
+$sestmptlhr = $_SESSION["txtTmptlhr"] ?? "";
+$sestgllhr = $_SESSION["txtTgllhr"] ?? "";
+$seshobi = $_SESSION["txtHobi"] ?? "";
+$sespasangan = $_SESSION["txtPasangan"] ?? "";
+$sespekerjaan = $_SESSION["txtPekerjaan"] ?? "";
+$sesortu = $_SESSION["txtOrtu"] ?? "";
+$seskakak = $_SESSION["txtKakak"] ?? "";
+$sesadik = $_SESSION["txtAdik"] ?? "";
 
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
@@ -111,7 +72,7 @@ endif;
         </label>
 
         <label for="txtNama"><span>Nama Lengkap:</span>
-          <input type="nama" id="txtNama" name="txtNama" placeholder="Masukkan nama lengkap" required autocomplete="email">
+          <input type="nama" id="txtNama" name="txtNamalngkp" placeholder="Masukkan nama lengkap" required autocomplete="email">
         </label>
 
         <label for="txtTmptlhr"><span>Tempat Lahir:</span>
@@ -151,6 +112,7 @@ endif;
         <button type="reset">Batal</button>
       </form>
 
+
     <section id="about">
       <?php
       $nim = 2511500010;
@@ -162,22 +124,22 @@ endif;
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong>
         <?php
-        echo $NIM;
+        echo $sesnim;
         ?>
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $Nama;
+        echo $sesnama;
         ?> &#128526;
       </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+      <p><strong>Tempat Lahir:</strong> <?php echo $sestmptlhr; ?></p>
+      <p><strong>Tanggal Lahir:</strong> <?php echo $sestgllhr; ?></p>
+      <p><strong>Hobi:</strong> <?php echo $seshobi; ?>&#127926;</p>
+      <p><strong>Pasangan:</strong> <?php echo $sespasangan; ?>&hearts;</p>
+      <p><strong>Pekerjaan:</strong> <?php echo $sespekerjaan; ?> &copy; 2025</p>
+      <p><strong>Nama Orang Tua:</strong> <?php echo $sesortu; ?></p>
+      <p><strong>Nama Kakak:</strong> <?php echo $seskakak; ?></p>
+      <p><strong>Nama Adik:</strong> <?php echo $sesadik ?></p>
     </section>
 
     <section id="contact">
