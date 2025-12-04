@@ -17,4 +17,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>echo session ke nilai label section contact selesai</li>
   <li>download & extract bahan pertemuan-09</li>
   <li>mengubah data POST ke array associative</li>
+  <li>mengganti kode file proses.php pada baris 23-32</li>
 </ol>
