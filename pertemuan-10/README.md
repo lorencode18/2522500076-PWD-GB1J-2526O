@@ -11,4 +11,6 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>mengetik query untuk membuat tabel tbl_tamu pada kotak isian perintah SQL</li>
   <li>membuat file baru dengan nama read.php</li>
   <li>membuat record untuk tabel tbl_tamu</li>
+  <li>duplikat file read.php dan rename menjadi read_inc.php</li>
+  <li>memodif kode pada read_inc.php</li>
 </ol>
