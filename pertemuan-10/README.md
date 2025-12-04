@@ -13,4 +13,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>membuat record untuk tabel tbl_tamu</li>
   <li>duplikat file read.php dan rename menjadi read_inc.php</li>
   <li>memodif kode pada read_inc.php</li>
+  <li>mengubah kode pada file index.php baris 146</li>
 </ol>
