@@ -15,4 +15,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>memodif kode pada read_inc.php</li>
   <li>mengubah kode pada file index.php baris 146</li>
   <li>menghapus baris 133-141 pada file index.php</li>
+  <li>backup file database</li>
 </ol>
