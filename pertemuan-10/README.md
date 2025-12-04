@@ -9,4 +9,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>membuat file baru dengan nama koneksi.php</li>
   <li>create database pada PHPMyAdmin</li>
   <li>mengetik query untuk membuat tabel tbl_tamu pada kotak isian perintah SQL</li>
+  <li>membuat file baru dengan nama read.php</li>
 </ol>
