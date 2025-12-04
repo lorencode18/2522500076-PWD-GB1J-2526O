@@ -21,4 +21,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menghapus kode pada baris 19-67 & mengganti kode sebelum section#about</li>
   <li>menambah kode baru setelah baris tentang saya pada section#about</li>
   <li>menghapus baris 130-140 pada file index.php</li>
+  <li>membuat file baru dan menambahkan kode</li>
 </ol>
