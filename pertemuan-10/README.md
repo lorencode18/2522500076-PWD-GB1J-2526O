@@ -7,4 +7,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
 <ol>
   <li>download & extract bahan pertemuan-10</li>
   <li>membuat file baru dengan nama koneksi.php</li>
+  <li>create database pada PHPMyAdmin</li>
 </ol>
