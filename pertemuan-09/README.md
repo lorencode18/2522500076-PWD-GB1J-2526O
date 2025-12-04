@@ -23,4 +23,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menghapus baris 130-140 pada file index.php</li>
   <li>membuat file baru dan menambahkan kode</li>
   <li>menambahkan kode pada fungsi.php</li>
+  <li>menambahkan kode pada fungsi.php untuk merender hasil atau output biodata</li>
 </ol>
