@@ -1,10 +1,14 @@
 <?php
 session_start();
 
-if ($_SERVER['REQUEST_METHOD'] !-- 'POST') {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] - 'Akses tidak valid.';
   redirect_ke('index.php#contact');
 }
+
+$nama = bersihkan($_POST['txtNama']  ?? '');
+$nama = bersihkan($_POST['txtEmail'] ?? '');
+$nama = bersihkan($_POST['txtPesan'] ?? '');
 
 $arrContact = [
   "nama" => $_POST["txtNama"] ?? "",

@@ -19,4 +19,8 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>copy file pertemuan-10 ke pertemuan-11</li>
   <li>update fungsi.php untuk helper redirect sederhana</li>
   <li>menambah penangkap pesan sukses/gagal pada index.php</li>
+  <li>menambah tampilan flash message pada index.php</li>
+  <li>mengubah data pada form contact</li>
+  <li>mengecek REQUEST_METHOD apakah menggunakan 'POST'</li>
+  <li>mengambil data $_POST, trim, htmlspecialchars</li>
 </ol>
