@@ -16,4 +16,7 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>mengubah kode pada file index.php baris 146</li>
   <li>menghapus baris 133-141 pada file index.php</li>
   <li>backup file database</li>
+  <li>copy file pertemuan-10 ke pertemuan-11</li>
+  <li>update fungsi.php untuk helper redirect sederhana</li>
+  <li>menambah penangkap pesan sukses/gagal pada index.php</li>
 </ol>
