@@ -23,4 +23,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
   <li>menambahkan kode pada proses.php</li>
   <li>mengambil data $_POST, trim, htmlspecialchars</li>
+  <li>menambahkan kode untuk validasi</li>
 </ol>
