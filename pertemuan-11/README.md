@@ -23,4 +23,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>mengubah data pada form contact</li>
   <li>mengecek REQUEST_METHOD apakah menggunakan 'POST'</li>
   <li>mengambil data $_POST, trim, htmlspecialchars</li>
+  <li>menambahkan kode untuk validasi pada proses.php</li>
 </ol>
