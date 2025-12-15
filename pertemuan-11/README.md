@@ -17,4 +17,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menghapus baris 133-141 pada file index.php</li>
   <li>backup file database</li>
   <li>copy file pertemuan-10 dan paste ke pertemuan-11</li>
+  <li>Update fungsi.php untuk helper redirect sederhana (pola PRG)</li>
 </ol>
