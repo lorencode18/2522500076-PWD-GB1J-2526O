@@ -19,4 +19,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>copy file pertemuan-10 dan paste di pertemuan-11</li>
   <li>Update fungsi.php untuk helper redirect sederhana (pola PRG)</li>
   <li>menambah penangkap pesan sukses/gagal (flash message dari SESSION)</li>
+  <li>menampilkan flash message</li>
 </ol>
