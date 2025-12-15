@@ -21,4 +21,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menambah penangkap pesan sukses/gagal (flash message dari SESSION)</li>
   <li>menampilkan flash message</li>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
+  <li>menambahkan kode pada proses.php</li>
 </ol>
