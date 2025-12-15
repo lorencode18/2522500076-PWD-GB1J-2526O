@@ -119,6 +119,7 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="contact">
       <h2>Kontak Kami</h2>
+      <form action="proses.php" method="POST">
 
       <?php if (!empty($flash_sukses)): ?>
         <div style="paddding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
