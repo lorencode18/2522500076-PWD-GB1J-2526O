@@ -34,6 +34,12 @@ if ($pesan === '') {
   $errors[] = 'Pesan minimal 10 karakter.';
 }
 
+if ($captcha === '') {
+  $errors[] = 'Captcha wajib diisi.';
+} elseif ($captcha != '5') {
+  $errors[] = 'Jawaban captcha salah.';
+}
+
 /*
 kondisi di bawah ini hanya dikerjakan jika ada error, 
 simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
