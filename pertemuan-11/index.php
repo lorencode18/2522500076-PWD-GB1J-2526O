@@ -155,7 +155,7 @@ require_once __DIR__ . '/fungsi.php';
         <label for="txtCaptcha">
           <span>2 + 3 = ?</span>
           <input type="text" id="txtCaptcha" name="txtCaptcha"
-          placeholder="Jawaban captcha" required>
+          placeholder="Masukkan jawaban" required>
         </label>
 
         <button type="submit">Kirim</button>
