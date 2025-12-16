@@ -32,4 +32,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menambahkan nilai lama captcha ke session old</li>
   <li>menambahkan field baru di tabel tbl_tamu</li>
   <li>Menambahkan kode pada read.php untuk menampilkan kolom Created At yang berisi tanggal dan waktu pesan dikirim.</li>
+  <li>backup file database</li>
 </ol>
