@@ -48,7 +48,8 @@ if(!empty($errors)) {
   $_SESSION['old'] = [
     'nama'  => $nama,
     'email' => $email,
-    'pesan' => $pesan
+    'pesan' => $pesan,
+    'captcha' => $captcha,
   ];
   
   $_SESSION['flash_error'] = implode('<br>', $errors);
