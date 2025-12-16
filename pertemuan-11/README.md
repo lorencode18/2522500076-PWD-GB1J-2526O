@@ -30,4 +30,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menambahkan input captcha di index.php</li>
   <li>menambahkan validasi captcha di proses.php</li>
   <li>menambahkan nilai lama captcha ke session old</li>
+  <li>menambahkan field baru di tabel tbl_tamu</li>
 </ol>
