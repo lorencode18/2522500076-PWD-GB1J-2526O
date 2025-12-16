@@ -27,4 +27,5 @@ Hari ini, Kamis 4 Desember 2025, saya belajar:<br>
   <li>menambahkan kode untuk INSERT tbl_tamu dengan prepared statement mysqli dan simpan pesan sukses/gagal ke $_SESSION serta redirect balik ke index.php#contact.</li>
   <li>menambahkan kode untuk kolom nomor urut pada read.php</li>
   <li>menambahkan validasi panjang minimal untuk nama dan pesan</li>
+  <li>menambahkan input captcha di index.php</li>
 </ol>
