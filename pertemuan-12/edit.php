@@ -9,7 +9,6 @@
     'options' => ['min_range' =>1] artinya cid harus ≥ 1
     (bukan 0, bahkan bukan negatif, bukan huruf, bukan HTML).
   */
-
   $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
 		'options' =>  ['min_range' => 1]
 	]);
@@ -24,7 +23,7 @@
 	*/
 
 	/*
-		Cek apakah $cid rnilai valid:
+		Cek apakah $cid bernilai valid:
 		Kalau $cid tidak valid, maka jangan lanjutkan proses,
 		kembalikan pengguna ke halaman awal (read.php) sembari
 		mengirim penanda error.

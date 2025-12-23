@@ -13,4 +13,5 @@ Hari ini, Kamis 18 Desember 2025, saya belajar:<br>
   <li>membuat file baru dengan nama proses_update.php</li>
   <li>menambahkan skrip pada proses_update.php untuk menyimpan perubahan menggunakan query UPDATE dan prepared statement</li>
   <li>memperbaiki skrip read.php</li>
+  <li>memperbaiki skrip proses_update.php</li>
 </ol>

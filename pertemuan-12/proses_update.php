@@ -11,7 +11,7 @@
 
   #validasi cid wajib angka dan > 0
   $cid = filter_input(INPUT_POST, 'cid', FILTER_VALIDATE_INT,[
-    'options' => ['main_range' => 1]
+    'options' => ['min_range' => 1]
   ]);
 
   if (!$cid) {
@@ -95,7 +95,7 @@
     /*
       Redirect balik ke read.php dan tampilkan info sukses.
     */
-    $_SSESSION['flash_sukses'] = 'Terima kasih, data anda sudah diperbaharui.';
+    $_SESSION['flash_sukses'] = 'Terima kasih, data anda sudah diperbaharui.';
     redirect_ke('read.php'); #pola PRG: kembali ke data dan exit()
   } else { #jika gagal, simpan kembali old value dan tampilkan error umum
     $_SESSION['old'] = [
