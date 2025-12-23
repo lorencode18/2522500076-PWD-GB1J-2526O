@@ -8,4 +8,5 @@ Hari ini, Kamis 18 Desember 2025, saya belajar:<br>
   <li>copy file pertemuan-11 dan paste di pertemuan-12</li> <li>menambahkan kolom Aksi setelah kolom No dengan isi Aksi sama dengan ID</li>
   <li>membuat link edit yang aman, yaitu cid di-casting saat output (HTML)</li>
   <li>menambahkan penampil flash maupun error</li>
+  <li>membuat file baru dengan nama edit.php</li>
 </ol>
