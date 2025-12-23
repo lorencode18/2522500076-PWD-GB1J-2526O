@@ -9,6 +9,5 @@ Hari ini, Kamis 18 Desember 2025, saya belajar:<br>
   <li>membuat link edit yang aman, yaitu cid di-casting saat output (HTML)</li>
   <li>menambahkan penampil flash maupun error</li>
   <li>membuat file baru dengan nama edit.php</li>
-  <li>menambahkan skrip untuk menampilkan form dengan data lama yang
-  dibaca berdasarkan cid (prefill form)</li>
+  <li>menambahkan skrip untuk menampilkan form dengan data lama yang dibaca berdasarkan cid (prefill form)</li>
 </ol>
