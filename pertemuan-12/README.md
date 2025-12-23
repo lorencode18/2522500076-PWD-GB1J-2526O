@@ -10,4 +10,5 @@ Hari ini, Kamis 18 Desember 2025, saya belajar:<br>
   <li>menambahkan penampil flash maupun error</li>
   <li>membuat file baru dengan nama edit.php</li>
   <li>menambahkan skrip untuk menampilkan form dengan data lama yang dibaca berdasarkan cid (prefill form)</li>
+  <li>membuat file baru dengan nama proses_update.php</li>
 </ol>
