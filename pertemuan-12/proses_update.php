@@ -4,7 +4,7 @@
   require_once __DIR__ . './fungsi.php';
   
   #cek method form, hanya izinkan POST
-  if ($SERVER['REQUEST_METHOD'] !== 'POST') {
+  if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('read.php');
   }
