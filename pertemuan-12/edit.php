@@ -122,7 +122,7 @@
           <label for="txtPesan"><span>Pesan Anda:</span>
             <textarea id="txtPesan" name="txtPesanEd" rows="4" 
               placeholder="Tulis pesan anda..." 
-              required><?= !empty($pesan) ? $pesan : '' ?>"></textarea>
+              required><?= !empty($pesan) ? $pesan : '' ?></textarea>
           </label>
 
           <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
