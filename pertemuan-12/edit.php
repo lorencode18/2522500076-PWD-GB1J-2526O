@@ -98,43 +98,43 @@
 		<main>
 			<section id="contact">
         <h2>Edit Buku Tamu</h2>
-      <?php if (!empty($flash_error)) : ?>
-        <div style="padding:10px; margin-bottom:10px; 
-          background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $flash_error; ?>
-        </div>
-      <?php endif; ?>
-      <form action="proses_update.php" method="POST">
+        <?php if (!empty($flash_error)) : ?>
+          <div style="padding:10px; margin-bottom:10px; 
+            background:#f8d7da; color:#721c24; border-radius:6px;">
+            <?= $flash_error; ?>
+          </div>
+        <?php endif; ?>
+        <form action="proses_update.php" method="POST">
 
-        <input type="text" name="cid" value="<?= (int)$cid; ?>">
+          <input type="text" name="cid" value="<?= (int)$cid; ?>">
 
-        <label for="txtNama"><span>Nama:</span>
-          <input type="text" id="txtNama" name="txtNamaEd" 
-            placeholder="Masukkan nama" required autocomplete="name"
-            value="<?= !empty($nama) ? $nama : '' ?>">
-        </label>
+          <label for="txtNama"><span>Nama:</span>
+            <input type="text" id="txtNama" name="txtNamaEd" 
+              placeholder="Masukkan nama" required autocomplete="name"
+              value="<?= !empty($nama) ? $nama : '' ?>">
+          </label>
 
-        <label for="txtEmail"><span>Email:</span>
-          <input type="email" id="txtEmail" name="txtEmailEd" 
-            placeholder="Masukkan email" required autocomplete="email"
-            value="<?= !empty($email) ? $email : '' ?>">
-        </label>
+          <label for="txtEmail"><span>Email:</span>
+            <input type="email" id="txtEmail" name="txtEmailEd" 
+              placeholder="Masukkan email" required autocomplete="email"
+              value="<?= !empty($email) ? $email : '' ?>">
+          </label>
 
-        <label for="txtPesan"><span>Pesan Anda:</span>
-          <textarea id="txtPesan" name="txtPesanEd" rows="4" 
-            placeholder="Tulis pesan anda..." 
-            required><?= !empty($pesan) ? $pesan : '' ?>"></textarea>
-        </label>
+          <label for="txtPesan"><span>Pesan Anda:</span>
+            <textarea id="txtPesan" name="txtPesanEd" rows="4" 
+              placeholder="Tulis pesan anda..." 
+              required><?= !empty($pesan) ? $pesan : '' ?>"></textarea>
+          </label>
 
-        <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
-          <input type="number" id="txtCaptcha" name="txtCaptcha" 
-            placeholder="Jawab Pertanyaan..." required>
-        </label>
+          <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
+            <input type="number" id="txtCaptcha" name="txtCaptcha" 
+              placeholder="Jawab Pertanyaan..." required>
+          </label>
 
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-        <a href="read.php" class="reset">Kembali</a>
-      </form>
+          <button type="submit">Kirim</button>
+          <button type="reset">Batal</button>
+          <a href="read.php" class="reset">Kembali</a>
+        </form>
       </section>
     </main>
 
