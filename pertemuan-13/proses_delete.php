@@ -27,7 +27,7 @@
   }
 
   #bind parameter dan eksekusi (s = string, i = integer)
-  mysqli_stmt_bind_param($stmt, "sssi", $nama, $email, $pesan, $cid);
+  #mysqli_stmt_bind_param($stmt, "sssi", $nama, $email, $pesan, $cid);
 
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
     /*
