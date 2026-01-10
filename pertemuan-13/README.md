@@ -9,4 +9,5 @@ NIM : 2522500076<br>
   <li>copy semua kode di proses_update.php ke proses_delete.php</li>
   <li>menyesuaikan kode di proses_delete.php untuk proses hapus</li>
   <li>menambahkan parameter cid untuk link delete di read.php</li>
+  <li>memperbaiki file proses_delete.php agar menggunakan parameter cid</li>
 </ol>
