@@ -5,4 +5,5 @@ Nama : Prita Lauren<br>
 NIM : 2522500076<br>
 <ol>
   <li>import sql bahan praktikum pertemuan-13</li>
+  <li>menambah link delete di file read.php untuk ke file proses_delete.php</li>
 </ol>
