@@ -42,4 +42,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>memperbaiki skrip pada edit_biodata</li>
   <li>memperbaiki skrip pada update_biodata</li>
   <li>memperbaiki skrip pada proses_biodata</li>
+  <li>mengubah tipe kolom nim menjadi integer</li>
 </ol>
