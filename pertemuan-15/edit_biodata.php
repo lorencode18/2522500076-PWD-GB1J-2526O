@@ -144,7 +144,7 @@
         <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
           <input type="text" id="txtNmOrtu" name="txtNmOrtu"
             required autocomplete="off"
-            value="<?= htmlspecialchars($nama_orangtua) ?>">
+            value="<?= htmlspecialchars($nm_orangtua) ?>">
         </label>
 
         <label for="txtNmKakak"><span>Nama Kakak:</span>
