@@ -3,7 +3,7 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  $nim = filter_input(INPUT_GET, 'nim', FILTER_SANITIZE_STRING);
+  $nim = filter_input(INPUT_GET, 'nim', FILTER_VALIDATE_INT);
 
   if (!$nim) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
@@ -37,7 +37,7 @@
   $hobi           = $row['hobi'];
   $pasangan       = $row['pasangan'];
   $pekerjaan      = $row['pekerjaan'];
-  $nama_orangtua  = $row['nama_orangtua'];
+  $nm_orangtua    = $row['nm_orangtua'];
   $nm_kakak       = $row['nm_kakak'];
   $nm_adik        = $row['nm_adik'];
 
