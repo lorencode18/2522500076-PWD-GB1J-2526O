@@ -133,18 +133,4 @@ if (mysqli_stmt_execute($stmt)) {
 #tutup statement
 mysqli_stmt_close($stmt);
 
-$arrBiodata = [
-  "nim"         => $_POST["txtNim"] ?? "",
-  "nama"        => $_POST["txtNmLengkap"] ?? "",
-  "tempat_lahir"=> $_POST["txtT4Lhr"] ?? "",
-  "tgl_lahir"   => $_POST["txtTglLhr"] ?? "",
-  "hobi"        => $_POST["txtHobi"] ?? "",
-  "pasangan"    => $_POST["txtPasangan"] ?? "",
-  "pekerjaan"   => $_POST["txtKerja"] ?? "",
-  "nm_orangtua" => $_POST["txtNmOrtu"] ?? "",
-  "nm_kakak"    => $_POST["txtNmKakak"] ?? "",
-  "nm_adik"     => $_POST["txtNmAdik"] ?? ""
-];
-$_SESSION["biodata"] = $arrBiodata;
 
-header("location: index.php#about");
