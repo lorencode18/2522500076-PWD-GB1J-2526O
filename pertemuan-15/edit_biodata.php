@@ -52,7 +52,7 @@
     $hobi          = $old['hobi'] ?? $hobi;
     $pasangan      = $old['pasangan'] ?? $pasangan;
     $pekerjaan     = $old['pekerjaan'] ?? $pekerjaan;
-    $nama_orangtua = $old['nama_orangtua'] ?? $nama_orangtua;
+    $nm_orangtua   = $old['nm_orangtua'] ?? $nm_orangtua;
     $nm_kakak      = $old['nm_kakak'] ?? $nm_kakak;
     $nm_adik       = $old['nm_adik'] ?? $nm_adik;
   }
