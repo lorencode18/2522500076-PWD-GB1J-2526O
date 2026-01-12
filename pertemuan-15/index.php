@@ -39,11 +39,11 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <?php
-    $bio_sukses = $_SESSION['bio_success'] ?? '';
+    $bio_sukses = $_SESSION['bio_sukses'] ?? '';
     $bio_error   = $_SESSION['bio_error'] ?? '';
     $bio_old     = $_SESSION['bio_old'] ?? [];
     
-    unset($_SESSION['bio_success'], $_SESSION['bio_error'], $_SESSION['bio_old']);
+    unset($_SESSION['bio_sukses'], $_SESSION['bio_error'], $_SESSION['bio_old']);
     ?>
 
     <section id="biodata">
