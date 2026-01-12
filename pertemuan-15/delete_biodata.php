@@ -19,3 +19,17 @@
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
     redirect_ke('read_biodata.php');
   }
+
+  mysqli_stmt_bind_param($stmt, "i", $nim);
+
+  if (mysqli_stmt_execute($stmt)) { 
+    #jika berhasil
+    $_SESSION['flash_sukses'] = 'Data biodata berhasil dihapus.';
+  } else {
+    #jika gagal
+    $_SESSION['flash_error'] = 'Data gagal dihapus. Silakan coba lagi.';
+  }
+
+  mysqli_stmt_close($stmt);
+
+  redirect_ke('read_biodata.php');
