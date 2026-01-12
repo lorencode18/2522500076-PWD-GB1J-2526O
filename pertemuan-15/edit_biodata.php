@@ -85,15 +85,15 @@
       <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
 
-      <?php if (!empty($bio_sukses)): ?>
+      <?php if (!empty($flash_sukses)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
-          <?= $bio_sukses; ?>
+          <?= $flash_sukses; ?>
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($bio_error)): ?>
+      <?php if (!empty($flash_error)): ?>
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
-          <?= $bio_error; ?>
+          <?= $flash_error; ?>
         </div>
       <?php endif; ?>
 
