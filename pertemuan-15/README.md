@@ -14,4 +14,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan penangkap pesan sukses/gagal</li>
   <li>menampilkan penangkap pesan sukses/gagal</li>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
+  <li>mengubah redirect ke section#biodata</li>
 </ol>

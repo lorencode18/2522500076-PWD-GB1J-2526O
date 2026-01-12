@@ -6,7 +6,7 @@ require_once __DIR__ . '/fungsi.php';
 #cek method form, hanya izinkan POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   $_SESSION['flash_error'] = 'Akses tidak valid.';
-  redirect_ke('index.php#contact');
+  redirect_ke('index.php#biodata');
 }
 
 #ambil dan bersihkan nilai dari form
