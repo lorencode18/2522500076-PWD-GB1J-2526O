@@ -34,4 +34,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan bind parameter dan eksekusi</li>
   <li>membuat file edit_biodata dan menambahkan validasi</li>
   <li>mengambil data lama</li>
+  <li>menambahkan form edit biodata lengkap dengan prefill data, flash old input, dan validasi error</li>
 </ol>

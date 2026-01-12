@@ -30,3 +30,141 @@
   $_SESSION['flash_error'] = 'Record tidak ditemukan.';
   redirect_ke('read_biodata.php');
   }
+
+  $nama_lengkap   = $row['nama_lengkap'];
+  $tempat_lahir   = $row['tempat_lahir'];
+  $tgl_lahir      = $row['tgl_lahir'];
+  $hobi           = $row['hobi'];
+  $pasangan       = $row['pasangan'];
+  $pekerjaan      = $row['pekerjaan'];
+  $nama_orangtua  = $row['nama_orangtua'];
+  $nm_kakak       = $row['nm_kakak'];
+  $nm_adik        = $row['nm_adik'];
+
+  $flash_error = $_SESSION['flash_error'] ?? '';
+  $old = $_SESSION['old'] ?? [];
+  unset($_SESSION['flash_error'], $_SESSION['old']);
+
+  if (!empty($old)) {
+    $nama_lengkap  = $old['nama_lengkap'] ?? $nama_lengkap;
+    $tempat_lahir  = $old['tempat_lahir'] ?? $tempat_lahir;
+    $tgl_lahir     = $old['tgl_lahir'] ?? $tgl_lahir;
+    $hobi          = $old['hobi'] ?? $hobi;
+    $pasangan      = $old['pasangan'] ?? $pasangan;
+    $pekerjaan     = $old['pekerjaan'] ?? $pekerjaan;
+    $nama_orangtua = $old['nama_orangtua'] ?? $nama_orangtua;
+    $nm_kakak      = $old['nm_kakak'] ?? $nm_kakak;
+    $nm_adik       = $old['nm_adik'] ?? $nm_adik;
+  }
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Ini Header</h1>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        &#9776;
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="biodata">
+      <h2>Biodata Sederhana Mahasiswa</h2>
+
+      <?php if (!empty($bio_sukses)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
+          <?= $bio_sukses; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($bio_error)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
+          <?= $bio_error; ?>
+        </div>
+      <?php endif; ?>
+
+      <form action="proses.php" method="POST">
+
+        <label for="txtNim"><span>NIM:</span>
+          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" 
+            required autocomplete="off"
+            value="<?= isset($bio_old['nim']) ? htmlspecialchars($bio_old['nim']) : '' ?>">
+        </label>
+
+        <label for="txtNmLengkap"><span>Nama Lengkap:</span>
+          <input type="text" id="txtNmLengkap" name="txtNmLengkap" placeholder="Masukkan Nama Lengkap"
+            required autocomplete="name"
+            value="<?= isset($bio_old['nm']) ? htmlspecialchars($bio_old['nm']) : '' ?>">
+        </label>
+
+        <label for="txtT4Lhr"><span>Tempat Lahir:</span>
+          <input type="text" id="txtT4Lhr" name="txtT4Lhr" placeholder="Masukkan Tempat Lahir"
+            required autocomplete="off"
+            value="<?= isset($bio_old['tempat']) ? htmlspecialchars($bio_old['tempat']) : '' ?>">
+        </label>
+
+        <label for="txtTglLhr"><span>Tanggal Lahir:</span>
+          <input type="text" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir"
+            required autocomplete="tanggal"
+            value="<?= isset($bio_old['tanggal']) ? htmlspecialchars($bio_old['tanggal']) : '' ?>">
+        </label>
+
+        <label for="txtHobi"><span>Hobi:</span>
+          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi"
+            required autocomplete="off"
+            value="<?= isset($bio_old['hobi']) ? htmlspecialchars($bio_old['hobi']) : '' ?>">
+        </label>
+
+        <label for="txtPasangan"><span>Pasangan:</span>
+         <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan"
+            required autocomplete="off"
+            value="<?= isset($bio_old['pasangan']) ? htmlspecialchars($bio_old['pasangan']) : '' ?>">
+        </label>
+
+        <label for="txtKerja"><span>Pekerjaan:</span>
+          <input type="text" id="txtKerja" name="txtKerja" placeholder="Masukkan Pekerjaan"
+            required autocomplete="pekerjaan"
+            value="<?= isset($bio_old['pekerjaan']) ? htmlspecialchars($bio_old['pekerjaan']) : '' ?>">
+        </label>
+
+        <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
+          <input type="text" id="txtNmOrtu" name="txtNmOrtu" placeholder="Masukkan Nama Orang Tua"
+            required autocomplete="off"
+            value="<?= isset($bio_old['ortu']) ? htmlspecialchars($bio_old['ortu']) : '' ?>">
+        </label>
+
+        <label for="txtNmKakak"><span>Nama Kakak:</span>
+          <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak"
+            required autocomplete="off"
+            value="<?= isset($bio_old['kakak']) ? htmlspecialchars($bio_old['kakak']) : '' ?>">
+        </label>
+
+        <label for="txtNmAdik"><span>Nama Adik:</span>
+          <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik"
+            required autocomplete="off" 
+            value="<?= isset($bio_old['adik']) ? htmlspecialchars($bio_old['adik']) : '' ?>">
+        </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html
