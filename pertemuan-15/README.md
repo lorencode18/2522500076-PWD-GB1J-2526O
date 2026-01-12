@@ -15,4 +15,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menampilkan penangkap pesan sukses/gagal</li>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
   <li>mengubah redirect ke section#biodata</li>
+  <li>mengambil data $_POST, trim, htmlspecialchars</li>
 </ol>
