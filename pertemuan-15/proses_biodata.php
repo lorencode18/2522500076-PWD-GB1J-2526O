@@ -91,7 +91,7 @@ if (!empty($errors)) {
 }
 
 #menyiapkan query INSERT dengan prepared statement
-$sql = "INSERT INTO biodata_mahasiswa (nim, nama, tempat_lahir, tgl_lahir, hobi, pasangan, pekerjaan, orang_tua, kakak, adik)
+$sql = "INSERT INTO biodata_mahasiswa (nim, nama, tempat_lahir, tgl_lahir, hobi, pasangan, pekerjaan, nm_orangtua, nm_kakak, nm_adik)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 $stmt = mysqli_prepare($conn, $sql);
 
