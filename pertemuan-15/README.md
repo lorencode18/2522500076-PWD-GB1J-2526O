@@ -26,4 +26,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan header tabel biodata</li>
   <li>menambahkan perulangan untuk menampilkan data</li>
   <li>menambahkan link edit/delete</li>
+  <li>memperbaiki kode pada read_biodata.php</li>
 </ol>
