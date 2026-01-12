@@ -97,66 +97,66 @@
         </div>
       <?php endif; ?>
 
-      <form action="proses.php" method="POST">
+      <form action="proses_biodata.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" 
-            required autocomplete="off"
-            value="<?= isset($bio_old['nim']) ? htmlspecialchars($bio_old['nim']) : '' ?>">
+          <input type="text" id="txtNim" name="txtNim" 
+            required autocomplete="off" readonly
+            value="<?= htmlspecialchars($nim) ?>">
         </label>
 
         <label for="txtNmLengkap"><span>Nama Lengkap:</span>
-          <input type="text" id="txtNmLengkap" name="txtNmLengkap" placeholder="Masukkan Nama Lengkap"
+          <input type="text" id="txtNmLengkap" name="txtNmLengkap"
             required autocomplete="name"
-            value="<?= isset($bio_old['nm']) ? htmlspecialchars($bio_old['nm']) : '' ?>">
+            value="<?= htmlspecialchars($nama_lengkap) ?>">
         </label>
 
         <label for="txtT4Lhr"><span>Tempat Lahir:</span>
-          <input type="text" id="txtT4Lhr" name="txtT4Lhr" placeholder="Masukkan Tempat Lahir"
+          <input type="text" id="txtT4Lhr" name="txtT4Lhr"
             required autocomplete="off"
-            value="<?= isset($bio_old['tempat']) ? htmlspecialchars($bio_old['tempat']) : '' ?>">
+            value="<?= htmlspecialchars($tempat_lahir) ?>">
         </label>
 
         <label for="txtTglLhr"><span>Tanggal Lahir:</span>
-          <input type="text" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir"
+          <input type="text" id="txtTglLhr" name="txtTglLhr"
             required autocomplete="tanggal"
-            value="<?= isset($bio_old['tanggal']) ? htmlspecialchars($bio_old['tanggal']) : '' ?>">
+            value="<?= htmlspecialchars($tgl_lahir) ?>">
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
-          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi"
+          <input type="text" id="txtHobi" name="txtHobi"
             required autocomplete="off"
-            value="<?= isset($bio_old['hobi']) ? htmlspecialchars($bio_old['hobi']) : '' ?>">
+            value="<?= htmlspecialchars($hobi) ?>">
         </label>
 
         <label for="txtPasangan"><span>Pasangan:</span>
-         <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan"
+         <input type="text" id="txtPasangan" name="txtPasangan"
             required autocomplete="off"
-            value="<?= isset($bio_old['pasangan']) ? htmlspecialchars($bio_old['pasangan']) : '' ?>">
+            value="<?= htmlspecialchars($pasangan) ?>">
         </label>
 
         <label for="txtKerja"><span>Pekerjaan:</span>
-          <input type="text" id="txtKerja" name="txtKerja" placeholder="Masukkan Pekerjaan"
+          <input type="text" id="txtKerja" name="txtKerja"
             required autocomplete="pekerjaan"
-            value="<?= isset($bio_old['pekerjaan']) ? htmlspecialchars($bio_old['pekerjaan']) : '' ?>">
+            value="<?= htmlspecialchars($pekerjaan) ?>">
         </label>
 
         <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
-          <input type="text" id="txtNmOrtu" name="txtNmOrtu" placeholder="Masukkan Nama Orang Tua"
+          <input type="text" id="txtNmOrtu" name="txtNmOrtu"
             required autocomplete="off"
-            value="<?= isset($bio_old['ortu']) ? htmlspecialchars($bio_old['ortu']) : '' ?>">
+            value="<?= htmlspecialchars($nama_orangtua) ?>">
         </label>
 
         <label for="txtNmKakak"><span>Nama Kakak:</span>
-          <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak"
+          <input type="text" id="txtNmKakak" name="txtNmKakak"
             required autocomplete="off"
-            value="<?= isset($bio_old['kakak']) ? htmlspecialchars($bio_old['kakak']) : '' ?>">
+            value="<?= htmlspecialchars($nm_kakak) ?>">
         </label>
 
         <label for="txtNmAdik"><span>Nama Adik:</span>
-          <input type="text" id="txtNmAdik" name="txtNmAdik" placeholder="Masukkan Nama Adik"
-            required autocomplete="off" 
-            value="<?= isset($bio_old['adik']) ? htmlspecialchars($bio_old['adik']) : '' ?>">
+          <input type="text" id="txtNmAdik" name="txtNmAdik"
+            required autocomplete="off"
+            value="<?= htmlspecialchars($nm_adik) ?>">
         </label>
 
         <button type="submit">Kirim</button>
