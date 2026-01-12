@@ -78,7 +78,7 @@ require_once __DIR__ . '/fungsi.php';
         <label for="txtT4Lhr"><span>Tempat Lahir:</span>
           <input type="text" id="txtT4Lhr" name="txtT4Lhr" placeholder="Masukkan Tempat Lahir"
             required autocomplete="off"
-            value="<?= isset($bio_old['tempat']) ? htmlspecia>lchars($bio_old['tempat']) : '' ?>"
+            value="<?= isset($bio_old['tempat']) ? htmlspecialchars($bio_old['tempat']) : '' ?>"
         </label>
 
         <label for="txtTglLhr"><span>Tanggal Lahir:</span>
