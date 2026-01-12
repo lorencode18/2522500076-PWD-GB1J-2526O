@@ -41,9 +41,10 @@
   $nm_kakak       = $row['nm_kakak'];
   $nm_adik        = $row['nm_adik'];
 
+  $flash_sukses = $_SESSION['flash_sukses'] ?? '';
   $flash_error = $_SESSION['flash_error'] ?? '';
   $old = $_SESSION['old'] ?? [];
-  unset($_SESSION['flash_error'], $_SESSION['old']);
+  unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
 
   if (!empty($old)) {
     $nama         = $old['txtNama'] ?? $nama;
@@ -99,7 +100,6 @@
 
       <form action="update_biodata.php" method="POST">
 
-        <input type="hidden" name="txtNim" value="<?= $nim ?>">
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" 
             required autocomplete="off" readonly
