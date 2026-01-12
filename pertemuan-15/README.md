@@ -22,4 +22,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>copy file read.php dan rename menjadi read_biodata.php</li>
   <li>mengaktifkan database tabel biodata mahasiswa (kelupaan)</li>
   <li>menambahkan query SELECT untuk tabel biodata</li>
+  <li>menambahkan flash message sukses dan error pada read biodata</li>
 </ol>
