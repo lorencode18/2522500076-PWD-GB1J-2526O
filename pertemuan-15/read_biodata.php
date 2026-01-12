@@ -35,15 +35,15 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
     <th>No</th>
     <th>Aksi</th>
     <th>NIM</th>
-    <th>Nama</th>
+    <th>Nama Lengkap</th>
     <th>Tempat Lahir</th>
     <th>Tanggal Lahir</th>
     <th>Hobi</th>
     <th>Pasangan</th>
     <th>Pekerjaan</th>
-    <th>Orang Tua</th>
-    <th>Kakak</th>
-    <th>Adik</th>
+    <th>Nama Orang Tua</th>
+    <th>Nama Kakak</th>
+    <th>Nama Adik</th>
     <th>Created At</th>
   </tr>
 
@@ -65,7 +65,7 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
       <td><?= htmlspecialchars($row['nm_orangtua']); ?></td>
       <td><?= htmlspecialchars($row['nm_kakak']); ?></td>
       <td><?= htmlspecialchars($row['nm_adik']); ?></td>
-      <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
+      <td><?= formatTanggal($row['created_at']); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>
