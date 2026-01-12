@@ -52,8 +52,8 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
     <tr>
       <td><?= $i++ ?></td>
       <td>
-        <a href="edit_biodata?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="delete_biodata.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <a href="edit_biodata?nim=<?= (int)$row['nim']; ?>">Edit</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nama']); ?>?')" href="delete_biodata.php?nim=<?= (int)$row['nim']; ?>">Delete</a>
       </td>
       <td><?= htmlspecialchars($row['nim']); ?></td>
       <td><?= htmlspecialchars($row['nama']); ?></td>     
@@ -62,9 +62,9 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
       <td><?= htmlspecialchars($row['hobi']); ?></td>
       <td><?= htmlspecialchars($row['pasangan']); ?></td>
       <td><?= htmlspecialchars($row['pekerjaan']); ?></td>
-      <td><?= htmlspecialchars($row['nama_ortu']); ?></td>
-      <td><?= htmlspecialchars($row['nama_kakak']); ?></td>
-      <td><?= htmlspecialchars($row['nama_adik']); ?></td>
+      <td><?= htmlspecialchars($row['nm_ortu']); ?></td>
+      <td><?= htmlspecialchars($row['nm_kakak']); ?></td>
+      <td><?= htmlspecialchars($row['nm_adik']); ?></td>
       <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
     </tr>
   <?php endwhile; ?>
