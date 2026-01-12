@@ -11,4 +11,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>membuat tabel biodata mahasiswa di phpMyAdmin</li>
   <li>copy file proses.php dan rename menjadi proses_biodata.php</li>
   <li>mengubah action pada form biodata menjadi proses_biodata.php</li>
+  <li>menambahkan penangkap pesan sukses/gagal</li>
 </ol>

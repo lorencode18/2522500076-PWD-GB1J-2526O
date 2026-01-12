@@ -38,9 +38,17 @@ require_once __DIR__ . '/fungsi.php';
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
+    <?php
+    $bio_success = $_SESSION['bio_success'] ?? '';
+    $bio_error   = $_SESSION['bio_error'] ?? '';
+    $bio_old     = $_SESSION['bio_old'] ?? [];
+    
+    unset($_SESSION['bio_success'], $_SESSION['bio_error'], $_SESSION['bio_old']);
+    ?>
+
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
-      <form action="proses_biodata.php" method="POST">
+      <form action="proses.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
