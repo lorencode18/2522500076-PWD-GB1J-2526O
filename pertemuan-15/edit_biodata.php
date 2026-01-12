@@ -46,15 +46,15 @@
   unset($_SESSION['flash_error'], $_SESSION['old']);
 
   if (!empty($old)) {
-    $nama          = $old['nama'] ?? $nama;
-    $tempat_lahir  = $old['tempat_lahir'] ?? $tempat_lahir;
-    $tgl_lahir     = $old['tgl_lahir'] ?? $tgl_lahir;
-    $hobi          = $old['hobi'] ?? $hobi;
-    $pasangan      = $old['pasangan'] ?? $pasangan;
-    $pekerjaan     = $old['pekerjaan'] ?? $pekerjaan;
-    $nm_orangtua   = $old['nm_orangtua'] ?? $nm_orangtua;
-    $nm_kakak      = $old['nm_kakak'] ?? $nm_kakak;
-    $nm_adik       = $old['nm_adik'] ?? $nm_adik;
+    $nama         = $old['txtNama'] ?? $nama;
+    $tempat_lahir = $old['txtT4Lhr'] ?? $tempat_lahir;
+    $tgl_lahir    = $old['txtTglLhr'] ?? $tgl_lahir;
+    $hobi         = $old['txtHobi'] ?? $hobi;
+    $pasangan     = $old['txtPasangan'] ?? $pasangan;
+    $pekerjaan    = $old['txtKerja'] ?? $pekerjaan;
+    $nm_orangtua  = $old['txtNmOrtu'] ?? $nm_orangtua;
+    $nm_kakak     = $old['txtNmKakak'] ?? $nm_kakak;
+    $nm_adik      = $old['txtNmAdik'] ?? $nm_adik;
   }
 ?>
 
@@ -99,7 +99,7 @@
 
       <form action="update_biodata.php" method="POST">
 
-        <input type="hidden" name="nim" value="<?= htmlspecialchars($nim); ?>">
+        <input type="hidden" name="txtNim" value="<?= $nim ?>">
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" 
             required autocomplete="off" readonly
@@ -120,7 +120,7 @@
 
         <label for="txtTglLhr"><span>Tanggal Lahir:</span>
           <input type="text" id="txtTglLhr" name="txtTglLhr"
-            required autocomplete="tanggal"
+            required autocomplete="off"
             value="<?= htmlspecialchars($tgl_lahir) ?>">
         </label>
 
@@ -138,7 +138,7 @@
 
         <label for="txtPekerjaan"><span>Pekerjaan:</span>
           <input type="text" id="txtPekerjaan" name="txtPekerjaan"
-            required autocomplete="pekerjaan"
+            required autocomplete="off"
             value="<?= htmlspecialchars($pekerjaan) ?>">
         </label>
 
