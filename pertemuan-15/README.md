@@ -17,4 +17,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>mengubah redirect ke section#biodata</li>
   <li>mengambil data POST, trim, htmlspecialchars</li>
   <li>menambahkan validasi pada proses_biodata</li>
+  <li>memperbaiki struktur html</li>
 </ol>
