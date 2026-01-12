@@ -30,6 +30,23 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
   </div>
 <?php endif; ?>
 
+<table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <th>No</th>
+    <th>Aksi</th>
+    <th>NIM</th>
+    <th>Nama</th>
+    <th>Tempat Lahir</th>
+    <th>Tanggal Lahir</th>
+    <th>Hobi</th>
+    <th>Pasangan</th>
+    <th>Pekerjaan</th>
+    <th>Orang Tua</th>
+    <th>Kakak</th>
+    <th>Adik</th>
+    <th>Created At</th>
+  </tr>
+
 
 
 

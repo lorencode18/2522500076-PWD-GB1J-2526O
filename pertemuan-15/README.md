@@ -23,4 +23,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>mengaktifkan database tabel biodata mahasiswa (kelupaan)</li>
   <li>menambahkan query SELECT untuk tabel biodata</li>
   <li>menambahkan flash message sukses dan error pada read biodata</li>
+  <li>menambahkan header tabel biodata</li>
 </ol>
