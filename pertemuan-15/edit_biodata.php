@@ -11,7 +11,7 @@
   }
 
   $stmt = mysqli_prepare($conn, 
-    "SELECT nim, nama_lengkap, tempat_lahir, tgl_lahir, hobi,
+    "SELECT nim, nama, tempat_lahir, tgl_lahir, hobi,
           pasangan, pekerjaan, nm_orangtua, nm_kakak, nm_adik
     FROM biodata_mahasiswa WHERE nim = ? LIMIT 1");
 
