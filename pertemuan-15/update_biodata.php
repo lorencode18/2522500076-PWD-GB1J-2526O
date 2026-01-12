@@ -48,12 +48,7 @@ if (!$stmt) {
     redirect_ke('edit_biodata.php?nim=' . urlencode($nim));
 }
 
-mysqli_stmt_bind_param(
-  $stmt, "ssssssssss",
-  $nama_lengkap, $tempat_lahir, $tgl_lahir, $hobi,
-  $pasangan, $pekerjaan, $nm_orangtua, $nm_kakak, $nm_adik,
-  $nim
-);
+mysqli_stmt_bind_param($stmt, "ssssssssssi", $nama, $tempat_lahir, $tgl_lahir, $hobi, $pasangan, $pekerjaan, $nm_orangtua, $nm_kakak, $nm_adik, $nim);
 
 if (mysqli_stmt_execute($stmt)) {
     $_SESSION['flash_sukses'] = 'Data biodata berhasil diperbarui.';
