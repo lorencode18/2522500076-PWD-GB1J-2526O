@@ -10,16 +10,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 # Ambil data dari form
-$nim           = trim($_POST['txtNim'] ?? '');
-$nama          = trim($_POST['txtNama'] ?? '');
-$tempat_lahir  = trim($_POST['txtT4Lhr'] ?? '');
-$tgl_lahir     = trim($_POST['txtTglLhr'] ?? '');
-$hobi          = trim($_POST['txtHobi'] ?? '');
-$pasangan      = trim($_POST['txtPasangan'] ?? '');
-$pekerjaan     = trim($_POST['txtKerja'] ?? '');
-$nm_orangtua   = trim($_POST['txtNmOrtu'] ?? '');
-$nm_kakak      = trim($_POST['txtNmKakak'] ?? '');
-$nm_adik       = trim($_POST['txtNmAdik'] ?? '');
+$nim          = trim($_POST['txtNim'] ?? '');
+$nama         = trim($_POST['txtNmLengkap'] ?? '');
+$tempat_lahir = trim($_POST['txtT4Lhr'] ?? '');
+$tgl_lahir    = trim($_POST['txtTglLhr'] ?? '');
+$hobi         = trim($_POST['txtHobi'] ?? '');
+$pasangan     = trim($_POST['txtPasangan'] ?? '');
+$pekerjaan    = trim($_POST['txtPekerjaan'] ?? '');
+$nm_orangtua  = trim($_POST['txtNmOrtu'] ?? '');
+$nm_kakak     = trim($_POST['txtNmKakak'] ?? '');
+$nm_adik      = trim($_POST['txtNmAdik'] ?? '');
 
 # Validasi wajib isi
 if ($nim === '' || $nama === '' || $tempat_lahir === '' ||
