@@ -47,6 +47,25 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
     <th>Created At</th>
   </tr>
 
-
-
-
+  <?php $i = 1; ?>
+  <?php while ($row = mysqli_fetch_assoc($q)): ?>
+    <tr>
+      <td><?= $i++ ?></td>
+      <td>
+        <a href="edit_biodata?cid=<?= (int)$row['cid']; ?>">Edit</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="delete_biodata.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+      </td>
+      <td><?= htmlspecialchars($row['nim']); ?></td>
+      <td><?= htmlspecialchars($row['nama']); ?></td>     
+      <td><?= htmlspecialchars($row['tempat_lahir']); ?></td>
+      <td><?= htmlspecialchars($row['tgl_lahir']); ?></td>
+      <td><?= htmlspecialchars($row['hobi']); ?></td>
+      <td><?= htmlspecialchars($row['pasangan']); ?></td>
+      <td><?= htmlspecialchars($row['pekerjaan']); ?></td>
+      <td><?= htmlspecialchars($row['nama_ortu']); ?></td>
+      <td><?= htmlspecialchars($row['nama_kakak']); ?></td>
+      <td><?= htmlspecialchars($row['nama_adik']); ?></td>
+      <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
+    </tr>
+  <?php endwhile; ?>
+</table>
