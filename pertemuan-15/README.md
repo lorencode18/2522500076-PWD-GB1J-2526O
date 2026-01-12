@@ -32,4 +32,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan validasi pada delete_biodata</li>
   <li>menambahkan prepared statement</li>
   <li>menambahkan bind parameter dan eksekusi</li>
+  <li>membuat file edit_biodata dan menambahkan validasi</li>
 </ol>
