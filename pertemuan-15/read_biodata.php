@@ -3,7 +3,7 @@
   require 'koneksi.php';
   require 'fungsi.php';
 
-  $sql = "SELECT * FROM biodata_mahasiswa";
+  $sql = "SELECT * FROM biodata_mahasiswa ORDER BY created_at DESC";
   $q = mysqli_query($conn, $sql);
 
   if (!$q) {
