@@ -108,7 +108,7 @@
         <label for="txtNmLengkap"><span>Nama Lengkap:</span>
           <input type="text" id="txtNmLengkap" name="txtNmLengkap"
             required autocomplete="name"
-            value="<?= htmlspecialchars($nama_lengkap) ?>">
+            value="<?= htmlspecialchars($nama) ?>">
         </label>
 
         <label for="txtT4Lhr"><span>Tempat Lahir:</span>
