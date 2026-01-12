@@ -29,5 +29,6 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>memperbaiki kode pada read_biodata.php</li>
   <li>menambahkan field baru di tabel biodata_mahasiswa</li>
   <li>membuat file delete_biodata</li>
-  <li>menambahkan validasi</li>
+  <li>menambahkan validasi pada delete_biodata</li>
+  <li>menambahkan prepared statement</li>
 </ol>
