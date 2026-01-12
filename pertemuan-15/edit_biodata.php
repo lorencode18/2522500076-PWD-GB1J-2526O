@@ -97,7 +97,7 @@
         </div>
       <?php endif; ?>
 
-      <form action="proses_biodata.php" method="POST">
+      <form action="update_biodata.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" 
