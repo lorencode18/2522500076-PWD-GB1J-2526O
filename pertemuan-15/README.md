@@ -16,4 +16,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
   <li>mengubah redirect ke section#biodata</li>
   <li>mengambil data POST, trim, htmlspecialchars</li>
+  <li>menambahkan validasi pada proses_biodata</li>
 </ol>

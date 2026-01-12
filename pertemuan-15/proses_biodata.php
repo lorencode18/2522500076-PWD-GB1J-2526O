@@ -16,7 +16,7 @@ $tempat     = bersihkan($_POST['txtT4Lhr'] ?? '');
 $tanggal    = bersihkan($_POST['txtTglLhr'] ?? '');
 $hobi       = bersihkan($_POST['txtHobi'] ?? '');
 $pasangan   = bersihkan($_POST['txtPasangan'] ?? '');
-$kerja      = bersihkan($_POST['txtKerja'] ?? '');
+$pekerjaan  = bersihkan($_POST['txtKerja'] ?? '');
 $ortu       = bersihkan($_POST['txtNmOrtu'] ?? '');
 $kakak      = bersihkan($_POST['txtNmKakak'] ?? '');
 $adik       = bersihkan($_POST['txtNmAdik'] ?? '');
@@ -24,34 +24,48 @@ $adik       = bersihkan($_POST['txtNmAdik'] ?? '');
 #Validasi sederhana
 $errors = []; #ini array untuk menampung semua error yang ada
 
+if ($nim === '') {
+  $errors[] = 'NIM wajib diisi.';
+}
+
 if ($nama === '') {
   $errors[] = 'Nama wajib diisi.';
 }
 
-if ($email === '') {
-  $errors[] = 'Email wajib diisi.';
-} elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $errors[] = 'Format e-mail tidak valid.';
+if ($tempat === '') {
+  $errors[] = 'Tempat Lahir wajib diisi.';
 }
 
-if ($pesan === '') {
-  $errors[] = 'Pesan wajib diisi.';
+if ($tanggal === '') {
+  $errors[] = 'Tanggal Lahir wajib diisi.';
 }
 
-if ($captcha === '') {
-  $errors[] = 'Pertanyaan wajib diisi.';
+if ($hobi === '') {
+  $errors[] = 'Hobi wajib diisi.';
+}
+
+if ($pekerjaan === '') {
+  $errors[] = 'Pekerjaan wajib diisi.';
+}
+
+if ($pasangan === '') {
+  $errors[] = 'Pasangan wajib diisi.';
+}
+
+if ($ortu === '') {
+  $errors[] = 'Nama Orang Tua wajib diisi.';
+}
+
+if ($kakak === '') {
+  $errors[] = 'Nama Kakak wajib diisi.';
+}
+
+if ($adik === '') {
+  $errors[] = 'Nama Adik wajib diisi.';
 }
 
 if (mb_strlen($nama) < 3) {
   $errors[] = 'Nama minimal 3 karakter.';
-}
-
-if (mb_strlen($pesan) < 10) {
-  $errors[] = 'Pesan minimal 10 karakter.';
-}
-
-if ($captcha!=="5") {
-  $errors[] = 'Jawaban '. $captcha.' captcha salah.';
 }
 
 /*
@@ -60,14 +74,20 @@ simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
 */
 if (!empty($errors)) {
   $_SESSION['old'] = [
-    'nama'  => $nama,
-    'email' => $email,
-    'pesan' => $pesan,
-    'captcha' => $captcha,
+    'nim'      => $nim,
+    'nama'     => $nama,
+    'tempat'   => $tempat,
+    'tanggal'  => $tanggal,
+    'hobi'     => $hobi,
+    'pasangan' => $pasangan,
+    'pekerjaan'=> $pekerjaan,
+    'ortu'     => $ortu,
+    'kakak'    => $kakak,
+    'adik'     => $adik,
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
-  redirect_ke('index.php#contact');
+  redirect_ke('index.php#biodata');
 }
 
 #menyiapkan query INSERT dengan prepared statement
