@@ -31,7 +31,7 @@
   redirect_ke('read_biodata.php');
   }
 
-  $nama_lengkap   = $row['nama_lengkap'];
+  $nama           = $row['nama'];
   $tempat_lahir   = $row['tempat_lahir'];
   $tgl_lahir      = $row['tgl_lahir'];
   $hobi           = $row['hobi'];
@@ -46,7 +46,7 @@
   unset($_SESSION['flash_error'], $_SESSION['old']);
 
   if (!empty($old)) {
-    $nama_lengkap  = $old['nama_lengkap'] ?? $nama_lengkap;
+    $nama          = $old['nama'] ?? $nama;
     $tempat_lahir  = $old['tempat_lahir'] ?? $tempat_lahir;
     $tgl_lahir     = $old['tgl_lahir'] ?? $tgl_lahir;
     $hobi          = $old['hobi'] ?? $hobi;
