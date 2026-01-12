@@ -136,8 +136,8 @@
             value="<?= htmlspecialchars($pasangan) ?>">
         </label>
 
-        <label for="txtKerja"><span>Pekerjaan:</span>
-          <input type="text" id="txtKerja" name="txtKerja"
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="txtPekerjaan" name="txtPekerjaan"
             required autocomplete="pekerjaan"
             value="<?= htmlspecialchars($pekerjaan) ?>">
         </label>
