@@ -68,6 +68,13 @@ if (mb_strlen($nama) < 3) {
   $errors[] = 'Nama minimal 3 karakter.';
 }
 
+if (mb_strlen($nim) < 10) {
+  $errors[] = 'NIM minimal 10 karakter.';
+}
+
+if (!ctype_digit($nim)) {
+    $errors[] = 'NIM harus berupa angka.';
+}
 /*
 kondisi di bawah ini hanya dikerjakan jika ada error, 
 simpan nilai lama dan pesan error, lalu redirect (konsep PRG)
@@ -101,7 +108,7 @@ if (!$stmt) {
   redirect_ke('index.php#biodata');
 }
 #bind parameter dan eksekusi (s = string)
-mysqli_stmt_bind_param($stmt, "sssssssssi", $nama, $tempat, $tanggal,$hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik, $nim);
+mysqli_stmt_bind_param($stmt, "sssssssssi", $nama, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik, $nim);
 
 if (mysqli_stmt_execute($stmt)) {
   unset($_SESSION['old']);
