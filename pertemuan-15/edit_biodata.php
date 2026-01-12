@@ -20,7 +20,7 @@
   redirect_ke('read_biodata.php');
   }
 
-  mysqli_stmt_bind_param($stmt, "s", $nim);
+  mysqli_stmt_bind_param($stmt, "i", $nim);
   mysqli_stmt_execute($stmt);
   $res = mysqli_stmt_get_result($stmt);
   $row = mysqli_fetch_assoc($res);
