@@ -53,10 +53,10 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
       <td><?= $i++ ?></td>
       <td>
         <a href="edit_biodata.php?nim=<?= (int)$row['nim']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nama']); ?>?')" href="delete_biodata.php?nim=<?= (int)$row['nim']; ?>">Delete</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nim']); ?>?')" href="delete_biodata.php?nim=<?= (int)$row['nim']; ?>">Delete</a>
       </td>
       <td><?= htmlspecialchars($row['nim']); ?></td>
-      <td><?= htmlspecialchars($row['nama']); ?></td>     
+      <td><?= htmlspecialchars($row['nama_lengkap']); ?></td>     
       <td><?= htmlspecialchars($row['tempat_lahir']); ?></td>
       <td><?= htmlspecialchars($row['tgl_lahir']); ?></td>
       <td><?= htmlspecialchars($row['hobi']); ?></td>
