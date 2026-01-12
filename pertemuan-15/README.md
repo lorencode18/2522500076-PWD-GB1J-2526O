@@ -19,4 +19,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan validasi pada proses_biodata</li>
   <li>memperbaiki struktur html</li>
   <li>INSERT tbl_tamu dengan prepared statement mysqli dan simpan pesan sukses/gagal ke SESSION serta redirect balik ke index.php#biodata.</li>
+  <li>copy file read.php dan rename menjadi read_biodata.php</li>
 </ol>
