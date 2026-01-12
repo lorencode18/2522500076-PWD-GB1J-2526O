@@ -40,4 +40,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>menambahkan skrip kode pada update_biodata</li>
   <li>backup database</li>
   <li>memperbaiki skrip pada edit_biodata</li>
+  <li>memperbaiki skrip pada update_biodata</li>
 </ol>

@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 # Ambil data dari form
 $nim           = trim($_POST['txtNim'] ?? '');
-$nama_lengkap  = trim($_POST['txtNmLengkap'] ?? '');
+$nama          = trim($_POST['txtNama'] ?? '');
 $tempat_lahir  = trim($_POST['txtT4Lhr'] ?? '');
 $tgl_lahir     = trim($_POST['txtTglLhr'] ?? '');
 $hobi          = trim($_POST['txtHobi'] ?? '');
@@ -22,7 +22,7 @@ $nm_kakak      = trim($_POST['txtNmKakak'] ?? '');
 $nm_adik       = trim($_POST['txtNmAdik'] ?? '');
 
 # Validasi wajib isi
-if ($nim === '' || $nama_lengkap === '' || $tempat_lahir === '' ||
+if ($nim === '' || $nama === '' || $tempat_lahir === '' ||
     $tgl_lahir === '' || $hobi === '' || $pasangan === '' ||
     $pekerjaan === '' || $nm_orangtua === '' || $nm_kakak === '' || $nm_adik === '') {
 
@@ -38,7 +38,7 @@ if ($nim === '' || $nama_lengkap === '' || $tempat_lahir === '' ||
 $stmt = mysqli_prepare(
   $conn,
   "UPDATE biodata_mahasiswa
-   SET nama_lengkap = ?, tempat_lahir = ?, tgl_lahir = ?, hobi = ?,
+   SET nama = ?, tempat_lahir = ?, tgl_lahir = ?, hobi = ?,
        pasangan = ?, pekerjaan = ?, nm_orangtua = ?, nm_kakak = ?, nm_adik = ?
    WHERE nim = ?"
 );
