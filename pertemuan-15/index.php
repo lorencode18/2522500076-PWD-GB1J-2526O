@@ -39,7 +39,7 @@ require_once __DIR__ . '/fungsi.php';
     </section>
 
     <?php
-    $bio_success = $_SESSION['bio_success'] ?? '';
+    $bio_sukses = $_SESSION['bio_success'] ?? '';
     $bio_error   = $_SESSION['bio_error'] ?? '';
     $bio_old     = $_SESSION['bio_old'] ?? [];
     
@@ -48,6 +48,19 @@ require_once __DIR__ . '/fungsi.php';
 
     <section id="biodata">
       <h2>Biodata Sederhana Mahasiswa</h2>
+
+      <?php if (!empty($bio_sukses)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
+          <?= $bio_sukses; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($bio_error)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
+          <?= $bio_error; ?>
+        </div>
+      <?php endif; ?>
+
       <form action="proses.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>

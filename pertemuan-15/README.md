@@ -12,4 +12,5 @@ Proses saya mengerjakan TRYOUT UAS sebagai berikut:<br>
   <li>copy file proses.php dan rename menjadi proses_biodata.php</li>
   <li>mengubah action pada form biodata menjadi proses_biodata.php</li>
   <li>menambahkan penangkap pesan sukses/gagal</li>
+  <li>menampilkan penangkap pesan sukses/gagal</li>
 </ol>
