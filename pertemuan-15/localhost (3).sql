@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 12, 2026 at 09:17 AM
+-- Generation Time: Jan 12, 2026 at 04:04 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -30,7 +30,7 @@ USE `db_pwd2025`;
 --
 
 CREATE TABLE `biodata_mahasiswa` (
-  `nim` varchar(20) NOT NULL,
+  `nim` bigint UNSIGNED NOT NULL,
   `nama` varchar(100) DEFAULT NULL,
   `tempat_lahir` varchar(100) DEFAULT NULL,
   `tgl_lahir` varchar(20) DEFAULT NULL,
@@ -48,8 +48,8 @@ CREATE TABLE `biodata_mahasiswa` (
 --
 
 INSERT INTO `biodata_mahasiswa` (`nim`, `nama`, `tempat_lahir`, `tgl_lahir`, `hobi`, `pasangan`, `pekerjaan`, `nm_orangtua`, `nm_kakak`, `nm_adik`, `created_at`) VALUES
-('2522500076', 'Prita Lauren', 'Pangkalpinang', '18 Oktober 2007', 'Baking', 'Tidak ada', 'Belum bekerja', 'Ai Nyong', 'Peter', 'Tidak ada', '2026-01-12 14:50:03'),
-('2525252525', 'Prita Lauren', 'Pangkalpinang', '18 Oktober 2007', 'Baking', 'Tidak ada', 'Belum bekerja', 'Ai Nyong', 'Peter', 'Tidak ada', '2026-01-12 14:50:03');
+(1010101010, 'labubu', 's', 's', 's', 's', 's', 's', 's', 's', '2026-01-12 22:50:00'),
+(2522500076, 'Prita Lauren', 'Pangkalpinang', '18 Oktober 2007', 'Baking, memasak', 'Tidak ada', 'Belum bekerja', 'Ai Nyong', 'Peter', 'Tidak ada', '2026-01-12 14:50:03');
 
 -- --------------------------------------------------------
 
