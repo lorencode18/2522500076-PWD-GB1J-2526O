@@ -99,6 +99,7 @@
 
       <form action="update_biodata.php" method="POST">
 
+        <input type="hidden" name="nim" value="<?= htmlspecialchars($nim); ?>">
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtNim" name="txtNim" 
             required autocomplete="off" readonly
