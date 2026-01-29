@@ -43,43 +43,63 @@ require_once __DIR__ . '/fungsi.php';
       <form action="proses_anggota.php" method="POST">
 
         <label for="txtNoAng"><span>Nomor Anggota:</span>
-          <input type="text" id="txtNoAng" name="txtNoAng" placeholder="Masukkan Nomor Anggota" required>
+          <input type="text" id="txtNoAng" name="txtNoAng" placeholder="Masukkan Nomor Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['no_angg']) ? htmlspecialchars($old['no_angg']) : '' ?>">
         </label>
 
         <label for="txtNmAng"><span>Nama Anggota:</span>
-          <input type="text" id="txtNmAng" name="txtNmAng" placeholder="Masukkan Nama Anggota" required>
+          <input type="text" id="txtNmAng" name="txtNmAng" placeholder="Masukkan Nama Anggota" 
+          required autocomplete="name"
+          value="<?= isset($old['nama_angg']) ? htmlspecialchars($old['nama_angg']) : '' ?>">
         </label>
 
         <label for="txtJabAng"><span>Jabatan Anggota:</span>
-          <input type="text" id="txtJabAng" name="txtJabAng" placeholder="Masukkan Jabatan Anggota" required>
+          <input type="text" id="txtJabAng" name="txtJabAng" placeholder="Masukkan Jabatan Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['jab']) ? htmlspecialchars($old['jab']) : '' ?>">
         </label>
 
         <label for="txtTglJadi"><span>Tanggal Jadi Anggota:</span>
-          <input type="text" id="txtTglJadi" name="txtTglJadi" placeholder="Masukkan Tanggal Jadi Anggota" required>
+          <input type="text" id="txtTglJadi" name="txtTglJadi" placeholder="Masukkan Tanggal Jadi Anggota" 
+          required autocomplete="date"
+          value="<?= isset($old['tgl_jadi']) ? htmlspecialchars($old['tgl_jadi']) : '' ?>">
         </label>
 
         <label for="txtSkill"><span>Kemampuan Anggota:</span>
-          <input type="text" id="txtSkill" name="txtSkill" placeholder="Masukkan Kemampuan Anggota" required>
+          <input type="text" id="txtSkill" name="txtSkill" placeholder="Masukkan Kemampuan Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['kemampuan']) ? htmlspecialchars($old['kemampuan']) : '' ?>">
         </label>
 
         <label for="txtGaji"><span>Gaji Anggota:</span>
-          <input type="text" id="txtGaji" name="txtGaji" placeholder="Masukkan Gaji Anggota" required>
+          <input type="text" id="txtGaji" name="txtGaji" placeholder="Masukkan Gaji Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['gaj']) ? htmlspecialchars($old['gaji']) : '' ?>">
         </label>
 
         <label for="txtNoWA"><span>Nomor WA:</span>
-          <input type="text" id="txtNoWA" name="txtNoWA" placeholder="Masukkan Nomor WA" required>
+          <input type="text" id="txtNoWA" name="txtNoWA" placeholder="Masukkan Nomor WA" 
+          required autocomplete="off"
+          value="<?= isset($old['no_wa']) ? htmlspecialchars($old['no_wa']) : '' ?>">
         </label>
 
         <label for="txBatalion"><span>Batalion Anggota:</span>
-          <input type="text" id="txBatalion" name="txBatalion" placeholder="Masukkan Batalion Anggota" required>
+          <input type="text" id="txBatalion" name="txBatalion" placeholder="Masukkan Batalion Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['batalion']) ? htmlspecialchars($old['batalion']) : '' ?>">
         </label>
 
         <label for="txtBB"><span>Berat Badan:</span>
-          <input type="text" id="txtBB" name="txtBB" placeholder="Masukkan Berat Badan" required>
+          <input type="text" id="txtBB" name="txtBB" placeholder="Masukkan Berat Badan" 
+          required autocomplete="off"
+          value="<?= isset($old['bb']) ? htmlspecialchars($old['bb']) : '' ?>">
         </label>
 
         <label for="txtTB"><span>Tinggi Badan:</span>
-          <input type="text" id="txtTB" name="txtTB" placeholder="Masukkan Tinggi Badan" required>
+          <input type="text" id="txtTB" name="txtTB" placeholder="Masukkan Tinggi Badan" 
+          required autocomplete="off"
+          value="<?= isset($old['tb']) ? htmlspecialchars($old['tb']) : '' ?>">
         </label>
 
         <button type="submit">Kirim</button>
