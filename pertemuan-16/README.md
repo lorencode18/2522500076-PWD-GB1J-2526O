@@ -8,4 +8,8 @@ Kelompok: GB1J<br>
 Proses saya mengerjakan UAS ini sebagai berikut:<br>
 <ol>
   <li>download dan ekstrak bahan uas dari e learning ke pertemuan-16</li>
+  <li>membuat tabel anggota pada phpmyadmin</li>
+  <li>backup database</li>
+  <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
+  <li>mengambil data post dan melakukan validasi, sanitasi dan konsep prg pada file proses_anggota</li>
 </ol>
