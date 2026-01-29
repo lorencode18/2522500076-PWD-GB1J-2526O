@@ -17,4 +17,5 @@ Proses saya mengerjakan UAS ini sebagai berikut:<br>
   <li>backup kembali database</li>
   <li>copy dan rename file read.php menjadi read_anggota.php</li>
   <li>mengetik skrip pada read_anggota lengkap dengan link edit dan link hapus</li>
+  <li>copy dan rename file edit.php menjadi edit_anggota.php</li>
 </ol>
