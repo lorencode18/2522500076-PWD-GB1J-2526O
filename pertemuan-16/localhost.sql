@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 29, 2026 at 09:53 AM
+-- Generation Time: Jan 29, 2026 at 10:34 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -69,16 +69,17 @@ CREATE TABLE `tbl_anggota` (
   `Nomor_WA` varchar(100) DEFAULT NULL,
   `Batalion` varchar(100) DEFAULT NULL,
   `Berat_Badan` varchar(50) DEFAULT NULL,
-  `Tinggi_Badan` varchar(50) DEFAULT NULL
+  `Tinggi_Badan` varchar(50) DEFAULT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `tbl_anggota`
 --
 
-INSERT INTO `tbl_anggota` (`Nomor_Anggota`, `Nama_Anggota`, `Jabatan`, `Tanggal_Jadi`, `Kemampuan`, `Gaji`, `Nomor_WA`, `Batalion`, `Berat_Badan`, `Tinggi_Badan`) VALUES
-(22222, 'lalala', 'anggota', '29 Januari 2026', 'Menyanyi', '500.000', '08080808', '-', '45', '150'),
-(234456, 'lalala', 'anggota', '29 Januari 2026', 'Menyanyi', '500.000', '08080808', '-', '45', '150');
+INSERT INTO `tbl_anggota` (`Nomor_Anggota`, `Nama_Anggota`, `Jabatan`, `Tanggal_Jadi`, `Kemampuan`, `Gaji`, `Nomor_WA`, `Batalion`, `Berat_Badan`, `Tinggi_Badan`, `created_at`) VALUES
+(22222, 'lalala', 'anggota', '29 Januari 2026', 'Menyanyi', '500.000', '08080808', '-', '45', '150', '2026-01-29 17:32:40'),
+(234456, 'lalala', 'anggota', '29 Januari 2026', 'Menyanyi', '500.000', '08080808', '-', '45', '150', '2026-01-29 17:32:40');
 
 -- --------------------------------------------------------
 
