@@ -19,4 +19,6 @@ Proses saya mengerjakan UAS ini sebagai berikut:<br>
   <li>mengetik skrip pada read_anggota lengkap dengan link edit dan link hapus</li>
   <li>copy dan rename file edit.php menjadi edit_anggota.php</li>
   <li>mengetik skrip pada edit_anggota untuk menampilkan data lama yang dibaca berdasarkan noangg</li>
+  <li>memindahkan kode penangkap flash sukses dan error ke section anggota</li>
+  <li>copy dan rename file proses update menjadi proses update anggota</li>
 </ol>
