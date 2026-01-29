@@ -51,4 +51,38 @@ if (!empty($errors)) {
   redirect_ke('index.php#anggota');
 }
 
+$sql = "INSERT INTO tbl_anggota (Nomor_Anggota, Nama_Anggota, Jabatan, Tanggal_Jadi, Kemampuan, Gaji, Nomor_WA, Batalion, Berat_Badan, Tinggi_Badan ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$stmt = mysqli_prepare($conn, $sql);
+
+if (!$stmt) {
+  $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
+  redirect_ke('index.php#anggota');
+}
+
+mysqli_stmt_bind_param($stmt, "sssssssssi", $nama_anggota, $jabatan, $tgljadi, $kemampuan, $gaji, $nowa, $batalion, $bb, $tb, $noangg);
+
+if (mysqli_stmt_execute($stmt)) { 
+  mysqli_stmt_close($stmt);  
+  unset($_SESSION['old']);
+  $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
+  redirect_ke('index.php#anggota'); 
+} else { 
+  mysqli_stmt_close($stmt);
+  $_SESSION['old'] = [
+    'noangg'    => $noangg,
+    'nmangg'    => $nmangg,
+    'jabatan'   => $jabatan,
+    'tgljadi'   => $tgljadi,
+    'kemampuan' => $kemampuan,
+    'gai'       => $gaji,
+    'nowa'      => $nowa,
+    'batalion'  => $batalion,
+    'bb'        => $bb,
+    'tb'        => $tb,
+  ];
+  $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
+  redirect_ke('index.php#anggota');
+}
+
+
 

@@ -12,4 +12,5 @@ Proses saya mengerjakan UAS ini sebagai berikut:<br>
   <li>backup database</li>
   <li>menampilkan nilai lama dari form untuk antisipasi jika error</li>
   <li>mengambil data post dan melakukan validasi, sanitasi dan konsep prg pada file proses_anggota</li>
+  <li>insert tabel anggota pada file proses_anggota</li>
 </ol>
