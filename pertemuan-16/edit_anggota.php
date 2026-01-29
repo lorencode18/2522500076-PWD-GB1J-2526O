@@ -4,18 +4,18 @@
   require 'fungsi.php';
 
   /*
-    Ambil nilai cid dari GET dan lakukan validasi untuk 
-    mengecek cid harus angka dan lebih besar dari 0 (> 0).
-    'options' => ['min_range' => 1] artinya cid harus ≥ 1 
+    Ambil nilai noangg dari GET dan lakukan validasi untuk 
+    mengecek noangg harus angka dan lebih besar dari 0 (> 0).
+    'options' => ['min_range' => 1] artinya noangg harus ≥ 1 
     (bukan 0, bahkan bukan negatif, bukan huruf, bukan HTML).
   */
-  $cid = filter_input(INPUT_GET, 'cid', FILTER_VALIDATE_INT, [
+  $noangg = filter_input(INPUT_GET, 'noangg', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
   ]);
   /*
     Skrip di atas cara penulisan lamanya adalah:
-    $cid = $_GET['cid'] ?? '';
-    $cid = (int)$cid;
+    $noangg = $_GET['noangg'] ?? '';
+    $noangg = (int)$noangg;
 
     Cara lama seperti di atas akan mengambil data mentah 
     kemudian validasi dilakukan secara terpisah, sehingga 
@@ -24,28 +24,28 @@
   */
 
   /*
-    Cek apakah $cid bernilai valid:
-    Kalau $cid tidak valid, maka jangan lanjutkan proses, 
+    Cek apakah $noangg bernilai valid:
+    Kalau $noangg tidak valid, maka jangan lanjutkan proses, 
     kembalikan pengguna ke halaman awal (read.php) sembari 
     mengirim penanda error.
   */
-  if (!$cid) {
+  if (!$noangg) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('read.php');
+    redirect_ke('read_anggota.php');
   }
 
   /*
     Ambil data lama dari DB menggunakan prepared statement, 
     jika ada kesalahan, tampilkan penanda error.
   */
-  $stmt = mysqli_prepare($conn, "SELECT cid, cnama, cemail, cpesan 
-                                    FROM tbl_tamu WHERE cid = ? LIMIT 1");
+  $stmt = mysqli_prepare($conn, "SELECT noangg, nmangg, jabatan, tgljadi, kemampuan, gaji, nowa, batalion, bb, tb
+                                    FROM tbl_anggota WHERE noangg = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
-    redirect_ke('read.php');
+    redirect_ke('read_anggota.php');
   }
 
-  mysqli_stmt_bind_param($stmt, "i", $cid);
+  mysqli_stmt_bind_param($stmt, "i", $noangg);
   mysqli_stmt_execute($stmt);
   $res = mysqli_stmt_get_result($stmt);
   $row = mysqli_fetch_assoc($res);
@@ -53,22 +53,36 @@
 
   if (!$row) {
     $_SESSION['flash_error'] = 'Record tidak ditemukan.';
-    redirect_ke('read.php');
+    redirect_ke('read_anggota.php');
   }
 
   #Nilai awal (prefill form)
-  $nama  = $row['cnama'] ?? '';
-  $email = $row['cemail'] ?? '';
-  $pesan = $row['cpesan'] ?? '';
+  $noangg    = $row['nmangg'] ?? '';
+  $nmangg    = $row['nmangg'] ?? '';
+  $jabatan   = $row['jabatan'] ?? '';
+  $tgljadi   = $row['tgljadi'] ?? '';
+  $kemampuan = $row['kemampuan'] ?? '';
+  $gaji      = $row['gaji'] ?? '';
+  $nowa      = $row['nowa'] ?? '';
+  $batalion  = $row['batalion'] ?? '';
+  $bb        = $row['bb'] ?? '';
+  $tb        = $row['tb'] ?? '';
 
   #Ambil error dan nilai old input kalau ada
   $flash_error = $_SESSION['flash_error'] ?? '';
   $old = $_SESSION['old'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old']);
   if (!empty($old)) {
-    $nama  = $old['nama'] ?? $nama;
-    $email = $old['email'] ?? $email;
-    $pesan = $old['pesan'] ?? $pesan;
+  $noangg    = $row['nmangg'] ?? '';
+  $nmangg    = $row['nmangg'] ?? '';
+  $jabatan   = $row['jabatan'] ?? '';
+  $tgljadi   = $row['tgljadi'] ?? '';
+  $kemampuan = $row['kemampuan'] ?? '';
+  $gaji      = $row['gaji'] ?? '';
+  $nowa      = $row['nowa'] ?? '';
+  $batalion  = $row['batalion'] ?? '';
+  $bb        = $row['bb'] ?? '';
+  $tb        = $row['tb'] ?? '';
   }
 ?>
 
@@ -96,46 +110,74 @@
     </header>
 
     <main>
-      <section id="contact">
-        <h2>Edit Buku Tamu</h2>
-        <?php if (!empty($flash_error)): ?>
-          <div style="padding:10px; margin-bottom:10px; 
-            background:#f8d7da; color:#721c24; border-radius:6px;">
-            <?= $flash_error; ?>
-          </div>
-        <?php endif; ?>
-        <form action="proses_update.php" method="POST">
+      <section id="anggota">
+      <h2>Data Anggota</h2>
+      <form action="proses_anggota.php" method="POST">
 
-          <input type="text" name="cid" value="<?= (int)$cid; ?>">
+        <label for="txtNoAng"><span>Nomor Anggota:</span>
+          <input type="text" id="txtNoAng" name="txtNoAng" placeholder="Masukkan Nomor Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['no_angg']) ? htmlspecialchars($old['no_angg']) : '' ?>">
+        </label>
 
-          <label for="txtNama"><span>Nama:</span>
-            <input type="text" id="txtNama" name="txtNamaEd" 
-              placeholder="Masukkan nama" required autocomplete="name"
-              value="<?= !empty($nama) ? $nama : '' ?>">
-          </label>
+        <label for="txtNmAng"><span>Nama Anggota:</span>
+          <input type="text" id="txtNmAng" name="txtNmAng" placeholder="Masukkan Nama Anggota" 
+          required autocomplete="name"
+          value="<?= isset($old['nama_angg']) ? htmlspecialchars($old['nama_angg']) : '' ?>">
+        </label>
 
-          <label for="txtEmail"><span>Email:</span>
-            <input type="email" id="txtEmail" name="txtEmailEd" 
-              placeholder="Masukkan email" required autocomplete="email"
-              value="<?= !empty($email) ? $email : '' ?>">
-          </label>
+        <label for="txtJabAng"><span>Jabatan Anggota:</span>
+          <input type="text" id="txtJabAng" name="txtJabAng" placeholder="Masukkan Jabatan Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['jab']) ? htmlspecialchars($old['jab']) : '' ?>">
+        </label>
 
-          <label for="txtPesan"><span>Pesan Anda:</span>
-            <textarea id="txtPesan" name="txtPesanEd" rows="4" 
-              placeholder="Tulis pesan anda..." 
-              required><?= !empty($pesan) ? $pesan : '' ?></textarea>
-          </label>
+        <label for="txtTglJadi"><span>Tanggal Jadi Anggota:</span>
+          <input type="text" id="txtTglJadi" name="txtTglJadi" placeholder="Masukkan Tanggal Jadi Anggota" 
+          required autocomplete="date"
+          value="<?= isset($old['tgl_jadi']) ? htmlspecialchars($old['tgl_jadi']) : '' ?>">
+        </label>
 
-          <label for="txtCaptcha"><span>Captcha 2 x 3 = ?</span>
-            <input type="number" id="txtCaptcha" name="txtCaptcha" 
-              placeholder="Jawab Pertanyaan..." required>
-          </label>
+        <label for="txtSkill"><span>Kemampuan Anggota:</span>
+          <input type="text" id="txtSkill" name="txtSkill" placeholder="Masukkan Kemampuan Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['kemampuan']) ? htmlspecialchars($old['kemampuan']) : '' ?>">
+        </label>
 
-          <button type="submit">Kirim</button>
-          <button type="reset">Batal</button>
-          <a href="read.php" class="reset">Kembali</a>
-        </form>
-      </section>
+        <label for="txtGaji"><span>Gaji Anggota:</span>
+          <input type="text" id="txtGaji" name="txtGaji" placeholder="Masukkan Gaji Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['gaj']) ? htmlspecialchars($old['gaji']) : '' ?>">
+        </label>
+
+        <label for="txtNoWA"><span>Nomor WA:</span>
+          <input type="text" id="txtNoWA" name="txtNoWA" placeholder="Masukkan Nomor WA" 
+          required autocomplete="off"
+          value="<?= isset($old['no_wa']) ? htmlspecialchars($old['no_wa']) : '' ?>">
+        </label>
+
+        <label for="txtBatalion"><span>Batalion Anggota:</span>
+          <input type="text" id="txtBatalion" name="txtBatalion" placeholder="Masukkan Batalion Anggota" 
+          required autocomplete="off"
+          value="<?= isset($old['batalion']) ? htmlspecialchars($old['batalion']) : '' ?>">
+        </label>
+
+        <label for="txtBB"><span>Berat Badan:</span>
+          <input type="text" id="txtBB" name="txtBB" placeholder="Masukkan Berat Badan" 
+          required autocomplete="off"
+          value="<?= isset($old['bb']) ? htmlspecialchars($old['bb']) : '' ?>">
+        </label>
+
+        <label for="txtTB"><span>Tinggi Badan:</span>
+          <input type="text" id="txtTB" name="txtTB" placeholder="Masukkan Tinggi Badan" 
+          required autocomplete="off"
+          value="<?= isset($old['tb']) ? htmlspecialchars($old['tb']) : '' ?>">
+        </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+    </section>
     </main>
 
     <script src="script.js"></script>
