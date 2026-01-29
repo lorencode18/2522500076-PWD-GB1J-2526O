@@ -16,4 +16,5 @@ Proses saya mengerjakan UAS ini sebagai berikut:<br>
   <li>menambah field baru di tbl_anggota</li>
   <li>backup kembali database</li>
   <li>copy dan rename file read.php menjadi read_anggota.php</li>
+  <li>mengetik skrip pada read_anggota lengkap dengan link edit dan link hapus</li>
 </ol>
